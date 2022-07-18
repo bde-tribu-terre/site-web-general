@@ -1,4 +1,5 @@
 <?php
+require_once ROOT . "../connect.php";
 require_once ROOT . "modele/SqlLog.class.php";
 require_once ROOT . "modele/SqlSimpleRequest.class.php";
 
