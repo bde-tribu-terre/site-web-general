@@ -2,7 +2,7 @@
 
 class SqlLog {
     // Attribut statique
-    private static string $script = "INSERT INTO general_log VALUES (0, 1, :message);";
+    private static string $script = "INSERT INTO general_log (service, message) VALUES (1, :message);";
 
     // Méthode statique
     public static function log(string $message) {
