@@ -190,7 +190,7 @@
         </div>
     </header>
     <main>
-        <?php require_once defined('CHEMIN_VERS_GABARIT') ? CHEMIN_VERS_GABARIT : GABARIT; ?>
+        <?php require_once GABARIT; ?>
     </main>
     <footer>
         <div class="container-fluid text-center">
