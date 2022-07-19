@@ -152,7 +152,7 @@ define('VERSION_SITE', file_get_contents(ROOT . '/version.txt'));
 function genererDate(string $date, bool $numerique = false): string {
     if ($numerique) {
         return
-            substr($date, 8, 2) . 'vue.php/' .
+            substr($date, 8, 2) . '/' .
             substr($date, 5, 2) . '/' .
             substr($date, 0, 4);
     } else {
