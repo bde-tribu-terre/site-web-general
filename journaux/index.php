@@ -3,7 +3,6 @@ const ROOT = '../';
 require_once(ROOT . 'controleur.php');
 
 use App\Request\SqlRequest;
-use App\Request\TransloaditRequest;
 
 // Récupération des journaux
 $journaux = SqlRequest::new(<<< EOF

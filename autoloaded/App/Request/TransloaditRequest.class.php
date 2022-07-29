@@ -124,8 +124,10 @@ class TransloaditRequest {
         $resultsUrls = array();
 
         foreach ($data["results"] as $step => $results) {
-            foreach ($results as $result)
-            $resultsUrls[$step][] = $result["ssl_url"];
+            if ($step == "output") {
+                foreach ($results as $result)
+                    $resultsUrls[] = $result["ssl_url"];
+            }
         }
 
         return $resultsUrls;
