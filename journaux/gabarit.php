@@ -2,8 +2,8 @@
     <h3>Journaux</h3>
     <hr>
     <?php foreach ($journaux as $journal): ?>
-        <?php if ($journal->count % 4 == 0): ?><div class="row"><?php endif ?>
-            <div class="col-sm-3">
+        <?php if ($journal->count % 3 == 0): ?><div class="row"><?php endif ?>
+            <div class="col-sm-4">
                 <div class="well">
                     <h3><?= $journal->titre ?></h3>
                     <time datetime="<?= $journal->date ?>"><?= preg_replace('/^[^ ]* /', '', genererDate($journal->date)) ?></time>
@@ -13,6 +13,6 @@
                     </a>
                 </div>
             </div>
-        <?php if ($journal->count == count($journaux) - 1 || ($journal->count + 1) % 4 == 0): ?></div><?php endif ?>
+        <?php if ($journal->count == count($journaux) - 1 || ($journal->count + 1) % 3 == 0): ?></div><?php endif ?>
     <?php endforeach; ?>
 </div>
