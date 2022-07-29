@@ -3,8 +3,7 @@ require_once ROOT . "../secrets.php";
 require_once ROOT . "autoloaded/Autoloader.class.php";
 
 use App\Checker\SitemapChecker;
-use App\Log;
-use App\Request\SqlRequest;
+use App\Checker\ThumbnailChecker;
 
 ########################################################################################################################
 # Vérification du protocole (les deux fonctionnent, mais on veut forcer le passage par HTTPS)                           #
@@ -61,6 +60,7 @@ function ajouterMessage($code, $texte): void {
 # Activation des checkers                                                                                              #
 ########################################################################################################################
 SitemapChecker::new(ROOT)->check();
+ThumbnailChecker::new(ROOT . "journaux/")->check();
 
 ########################################################################################################################
 # Version du site                                                                                                      #
