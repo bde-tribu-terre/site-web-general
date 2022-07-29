@@ -1,12 +1,14 @@
 <?php
-require_once ROOT . "../connect.php";
-require_once ROOT . "modele/SqlLog.class.php";
-require_once ROOT . "modele/SqlSimpleRequest.class.php";
+require_once ROOT . "../secrets.php";
+require_once ROOT . "autoloaded/Autoloader.class.php";
+
+use App\Log;
+use App\Request\SqlRequest;
 
 ########################################################################################################################
 # Vérification du protocole (les deux fonctionnent, mais on veut forcer le passage par HTTPS)                           #
 ########################################################################################################################
-if($_SERVER["HTTPS"] != "on") {
+if ($_SERVER["HTTPS"] != "on") {
     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
     exit();
 }
@@ -67,7 +69,7 @@ $dynamicSitemaps = [
 // Déclaration des fonctions de mise à jour.
 function getSitemapUriListBySql(string $sqlRequest): array {
     $uriList = array();
-    foreach (SqlSimpleRequest::new($sqlRequest)->execute() as $result) $uriList[] = $result->uri;
+    foreach (SqlRequest::new($sqlRequest)->execute() as $result) $uriList[] = $result->uri;
     return $uriList;
 }
 
@@ -125,7 +127,7 @@ if (file_exists(ROOT . "sitemapindex.xml")) {
 
     // Log
     if (count($notIndexedSitemapsIndexes) != 0) {
-        SqlLog::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' was incomplete: added " . count($notIndexedSitemapsIndexes) . " new sitemaps URI; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
+        Log::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' was incomplete: added " . count($notIndexedSitemapsIndexes) . " new sitemaps URI; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
     }
 } elseif (!$sitemapIndexExists) {
     // Regénération de la sitemapindex à partir des données des sitemaps dynamiques.
@@ -148,7 +150,7 @@ EOF
     }
 
     // Log
-    SqlLog::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' not found: regenerated one from scratch using dynamic sitemaps informations; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
+    Log::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' not found: regenerated one from scratch using dynamic sitemaps informations; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
 }
 
 
@@ -196,7 +198,7 @@ EOT
                 $sitemapIndexSitemapXmlElement->lastmod = date("Y-m-d\TH:i:sP");
 
                 // Log.
-                SqlLog::log("[sitemap] Sitemap at URI '$sitemapIndexSitemapXmlElement->loc'" . ($sitemapExists ? " out of date by $outOfDateSeconds seconds" : "not found") . ": updated by " . ($sitemapExists ? "replacing existing file" : "creating previously inexistant file") . "; new sitemap contains " . count($uriList) . " URLs");
+                Log::log("[sitemap] Sitemap at URI '$sitemapIndexSitemapXmlElement->loc'" . ($sitemapExists ? " out of date by $outOfDateSeconds seconds" : "not found") . ": updated by " . ($sitemapExists ? "replacing existing file" : "creating previously inexistant file") . "; new sitemap contains " . count($uriList) . " URLs");
             }
         }
     }

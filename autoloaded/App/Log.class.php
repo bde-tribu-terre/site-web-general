@@ -1,6 +1,10 @@
 <?php
+namespace App;
 
-class SqlLog {
+use App\Request\SqlRequest;
+use Exception;
+
+class Log {
     // Attribut statique
     private static string $script = "INSERT INTO general_log (service, message) VALUES (1, :message);";
 

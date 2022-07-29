@@ -2,8 +2,11 @@
 const ROOT = '../';
 require_once(ROOT . 'controleur.php');
 
+use App\Request\SqlRequest;
+use App\Request\TransloaditRequest;
+
 // Récupération des journaux
-$journaux = SqlSimpleRequest::new(<<< EOF
+$journaux = SqlRequest::new(<<< EOF
 SELECT
     idJournal AS id,
     titreJournal AS titre,
