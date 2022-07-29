@@ -2,6 +2,7 @@
 require_once ROOT . "../secrets.php";
 require_once ROOT . "autoloaded/Autoloader.class.php";
 
+use App\Checker\SitemapChecker;
 use App\Log;
 use App\Request\SqlRequest;
 
@@ -57,155 +58,9 @@ function ajouterMessage($code, $texte): void {
 }
 
 ########################################################################################################################
-# Mise à jour des sitemaps                                                                                             #
+# Activation des checkers                                                                                              #
 ########################################################################################################################
-// Liste des sitemaps dynamiques qu'il faut mettre à jour.
-// [URI de la sitemap, délai avant MÀJ en secondes, fonction pour récupérer une liste d'URI, arguments de la fonction, préfixe des URI des éléments]
-$dynamicSitemaps = [
-    ["/sitemap-static.xml", 2592000, "getSitemapUriByIndexSearch", [ROOT], ""],
-    ["/journaux/sitemap-journaux.xml", 86400, "getSitemapUriListBySql", ["SELECT pdfJournal AS uri FROM website_journaux"], "/journaux"]
-];
-
-// Déclaration des fonctions de mise à jour.
-function getSitemapUriListBySql(string $sqlRequest): array {
-    $uriList = array();
-    foreach (SqlRequest::new($sqlRequest)->execute() as $result) $uriList[] = $result->uri;
-    return $uriList;
-}
-
-function getSitemapUriByIndexSearch(string $root): array {
-    $uriList = array();
-
-    // Recherche en profondeur dans un arbre.
-    $stack = [$root];
-    while (!empty($stack)) {
-        $vertice = array_pop($stack);
-        foreach (array_diff(scandir($vertice), array('..', '.')) as $wertice) {
-            if ($wertice == "index.php") {
-                // Simplification de l'URI.
-                $r = array();
-                foreach (explode("/", $vertice . $wertice) as $p) {
-                    if ($p == "..") array_pop($r);
-                    elseif ($p != '.' && strlen($p)) $r[] = $p;
-                }
-                $uriList[] =  ($vertice[0] == "/" ? "/" : "") . implode("/", $r);
-            } elseif (is_dir($vertice . $wertice . "/")) {
-                $stack[] = $vertice . $wertice . "/";
-            }
-        }
-    }
-
-    return $uriList;
-}
-
-// Vérification de l'existence de la sitemapindex.
-$sitemapIndexExists = file_exists(ROOT . "sitemapindex.xml");
-if (file_exists(ROOT . "sitemapindex.xml")) {
-    // Chargement de la sitemapindex.
-    $sitemapIndexXmlElement = simplexml_load_file(ROOT . "sitemapindex.xml");
-
-    // Vérification que toutes les sitemaps dynamiques sont bien présentes.
-    // Listage des sitemaps dynamiques pas indexées.
-    $notIndexedSitemapsIndexes = array();
-    for ($i = 0; $i < count($dynamicSitemaps); $i++) $notIndexedSitemapsIndexes[] = $i;
-    foreach ($sitemapIndexXmlElement as $sitemapIndexSitemapXmlElement) {
-        // Pour chaque sitemap on parcourt la liste des sitemaps dynamiques à MÀJ pour voir s'il y a correspondance.
-        foreach ($dynamicSitemaps as $i=>$dynamicSitemap) {
-            // Vérification qu'il s'agit d'une correspondance en utilisant la localisation du fichier.
-            if ($sitemapIndexSitemapXmlElement->loc == "https://" . $_SERVER["HTTP_HOST"] . $dynamicSitemap[0]) {
-                unset($notIndexedSitemapsIndexes[$i]);
-            }
-        }
-    }
-
-    // Ajout des sitemaps dynamiques pas indexées.
-    foreach ($notIndexedSitemapsIndexes as $i) {
-        $newURI = $sitemapIndexXmlElement->addChild("sitemap");
-        $newURI->addChild("loc", "https://" . $_SERVER["HTTP_HOST"] . $dynamicSitemaps[$i][0]);
-        $newURI->addChild("lastmod", date("Y-m-d\TH:i:sP", 0));
-    }
-
-    // Log
-    if (count($notIndexedSitemapsIndexes) != 0) {
-        Log::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' was incomplete: added " . count($notIndexedSitemapsIndexes) . " new sitemaps URI; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
-    }
-} elseif (!$sitemapIndexExists) {
-    // Regénération de la sitemapindex à partir des données des sitemaps dynamiques.
-    $sitemapIndexXmlElement = simplexml_load_string(<<<EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex
-        xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-            https://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
-</sitemapindex>
-EOF
-    );
-
-    // Insertion des URI des sitemaps à indexer dans la sitemapindex.
-    foreach ($dynamicSitemaps as $dynamicSitemap) {
-        $newURI = $sitemapIndexXmlElement->addChild("url");
-        $newURI->addChild("loc", "https://" . $_SERVER["HTTP_HOST"] . $dynamicSitemap[0]);
-        $newURI->addChild("lastmod", date("Y-m-d\TH:i:sP", 0));
-    }
-
-    // Log
-    Log::log("[sitemap] Sitemaps index at URI 'https://" . $_SERVER["HTTP_HOST"] . "/sitemapindex.xml' not found: regenerated one from scratch using dynamic sitemaps informations; new sitemaps index contains " . count($dynamicSitemaps) . " sitemap URLs");
-}
-
-
-// Vérification des dates de dernières modifications des sitemaps pour MÀJ.
-// Parcours des sitemaps.
-foreach ($sitemapIndexXmlElement as $sitemapIndexSitemapXmlElement) {
-    // Pour chaque sitemap on parcourt la liste des sitemaps dynamiques à MÀJ pour voir s'il y a correspondance.
-    foreach ($dynamicSitemaps as $dynamicSitemap) {
-        // Vérification qu'il s'agit d'une correspondance en utilisant la localisation du fichier.
-        if ($sitemapIndexSitemapXmlElement->loc == "https://" . $_SERVER["HTTP_HOST"] . $dynamicSitemap[0]) {
-            // Est-ce que le fichier de sitemap existe.
-            $sitemapExists = file_exists(ROOT . $dynamicSitemap[0]);
-
-            // Est-ce que le délai est dépassé ou pas. Si oui, alors on doit mettre à jour, sinon non.
-            $lastmodTime = strtotime($sitemapIndexSitemapXmlElement->lastmod);
-            $outOfDateSeconds = time() - $lastmodTime;
-            if (!$sitemapExists || $outOfDateSeconds > 86400) {
-                // Lancement de la MÀJ.
-
-                // Recopie de l'en-tête d'un fichier de sitemap. L'objet est de classe SimpleXMLElement.
-                $sitemapXmlElement = simplexml_load_string(<<<EOT
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-    https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-</urlset>
-EOT
-                );
-
-                // Récupération des URI à insérer dans la sitemap via la fonction fournie.
-                $uriList = call_user_func_array($dynamicSitemap[2], $dynamicSitemap[3]);
-
-                // Insertion des URI dans la sitemap.
-                foreach ($uriList as $uri) {
-                    $newURI = $sitemapXmlElement->addChild("url");
-                    $newURI->addChild("loc", "https://" . $_SERVER["HTTP_HOST"] . $dynamicSitemap[4] . "/" . $uri);
-                    $newURI->addChild("lastmod", date("Y-m-d\TH:i:sP"));
-                }
-
-                // Écriture du fichier (pour appliquer les MÀJ des lastmod).
-                $sitemapXmlElement->asXML(ROOT . $dynamicSitemap[0]);
-
-                // Mise à jour de l'attribut lastmod.
-                $sitemapIndexSitemapXmlElement->lastmod = date("Y-m-d\TH:i:sP");
-
-                // Log.
-                Log::log("[sitemap] Sitemap at URI '$sitemapIndexSitemapXmlElement->loc'" . ($sitemapExists ? " out of date by $outOfDateSeconds seconds" : "not found") . ": updated by " . ($sitemapExists ? "replacing existing file" : "creating previously inexistant file") . "; new sitemap contains " . count($uriList) . " URLs");
-            }
-        }
-    }
-}
-
-// Mise à jour de la sitemapindex avec les nouveaux attributs lastmod.
-$sitemapIndexXmlElement->asXML(ROOT . "sitemapindex.xml");
+SitemapChecker::new(ROOT)->check();
 
 ########################################################################################################################
 # Version du site                                                                                                      #
