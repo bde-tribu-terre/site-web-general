@@ -1,6 +1,6 @@
 <?php
-require_once ROOT . "../secrets.php";
-require_once ROOT . "autoloaded/Autoloader.class.php";
+require ROOT . "../secrets.php";
+require ROOT . "autoloaded/Autoloader.class.php";
 
 use App\Checker\SitemapChecker;
 use App\Checker\ThumbnailChecker;

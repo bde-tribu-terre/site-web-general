@@ -1,6 +1,6 @@
 <?php
 const ROOT = '../';
-require_once(ROOT . 'controleur.php');
+require ROOT . 'controleur.php';
 
 use App\Request\SqlRequest;
 
@@ -22,4 +22,4 @@ EOF
 // Appel du cadre
 const TITLE = 'Journaux';
 const GABARIT = 'gabarit.php';
-require_once(ROOT . 'cadre.php');
+require ROOT . 'cadre.php';

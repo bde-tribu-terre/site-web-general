@@ -159,25 +159,14 @@
                             <ul class="text-left">
                                 <?php
                                 foreach ($GLOBALS['messages'] as $arrMessage) {
-                                    switch (substr($arrMessage[0], 0, 1)) {
-                                        case '1':
-                                            $color = '';
-                                            break;
-                                        case '2':
-                                            $color = ' style="color: green;"';
-                                            break;
-                                        case '4':
-                                            $color = ' style="color: orange"';
-                                            break;
-                                        case '5':
-                                            $color = ' style="color: red"';
-                                            break;
-                                        case '6':
-                                            $color = ' style="color: purple"';
-                                            break;
-                                        default:
-                                            $color = ' style="color: blue"';
-                                    }
+                                    $color = match (substr($arrMessage[0], 0, 1)) {
+                                        '1' => '',
+                                        '2' => ' style="color: green;"',
+                                        '4' => ' style="color: orange"',
+                                        '5' => ' style="color: red"',
+                                        '6' => ' style="color: purple"',
+                                        default => ' style="color: blue"',
+                                    };
                                     echo '<li' . $color . '>' . $arrMessage[0] . ' : ' . $arrMessage[1] . '</li>';
                                 }
                                 ?>
@@ -190,7 +179,7 @@
         </div>
     </header>
     <main>
-        <?php require_once GABARIT; ?>
+        <?php require GABARIT; ?>
     </main>
     <footer>
         <div class="container-fluid text-center">

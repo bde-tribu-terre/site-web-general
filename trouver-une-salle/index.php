@@ -1,6 +1,6 @@
 <?php // TODO: Fix trouveur de salles
 const ROOT = '../';
-require_once(ROOT . 'controleur.php');
+require ROOT . 'controleur.php';
 if (isset($_GET['nom'])) {
     try {
         if (
@@ -68,4 +68,4 @@ if (isset($_GET['nom'])) {
 
 const TITLE = 'Trouver une salle';
 define("GABARIT", $gabarit);
-require_once(ROOT . 'cadre.php');
+require ROOT . 'cadre.php';
