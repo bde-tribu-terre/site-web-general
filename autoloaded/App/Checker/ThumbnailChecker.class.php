@@ -21,18 +21,33 @@ class ThumbnailChecker {
 
     // Méthodes.
     public function check(): bool {
-        foreach (scandir($this->pathToLocation) as $file) {
-            if (str_ends_with($file, ".pdf") && !file_exists($this->pathToLocation . $file . ".jpg")) {
+        $modif = false;
 
-                $success = file_put_contents($this->pathToLocation . $file . ".jpg", file_get_contents(TransloaditRequest::new([$this->pathToLocation . $file])->execute(TransloaditRequest::PDF_THUMBNAIL)[0]));
+        $thumbnailDirectory = $this->pathToLocation . "thumbnails/";
+
+        if (!file_exists($thumbnailDirectory) || is_dir($thumbnailDirectory)) {
+            mkdir($thumbnailDirectory);
+        }
+
+        foreach (scandir($this->pathToLocation) as $file) {
+            $thumbnailFileName = $thumbnailDirectory . $file . ".webp";
+
+            if (str_ends_with($file, ".pdf") && !file_exists($thumbnailFileName)) {
+
+                $transloaditResult = TransloaditRequest::new([$this->pathToLocation . $file])->execute(TransloaditRequest::PDF_THUMBNAIL);
+
+                $success = file_put_contents($thumbnailFileName, file_get_contents($transloaditResult[0]));
 
                 if ($success) {
-                    Log::log("[thumbnail] Thumbnail image of PDF file at URI 'https://" . $_SERVER["HTTP_HOST"] . "$this->pathToLocation$file' not found: created thumbnail on Transloadit and successfully downloaded at '$this->pathToLocation$file.jpg'");
+                    Log::log("[thumbnail] Thumbnail image of PDF file at URI 'https://" . $_SERVER["HTTP_HOST"] . "$this->pathToLocation$file' not found: created thumbnail on Transloadit and successfully downloaded at '$thumbnailFileName'");
                 } else {
-                    Log::log("[thumbnail] Thumbnail image of PDF file at URI 'https://" . $_SERVER["HTTP_HOST"] . "$this->pathToLocation$file' not found: created thumbnail on Transloadit but unsuccessfully downloaded at '$this->pathToLocation$file.jpg'");
+                    Log::log("[thumbnail] Thumbnail image of PDF file at URI 'https://" . $_SERVER["HTTP_HOST"] . "$this->pathToLocation$file' not found: created thumbnail on Transloadit but unsuccessfully downloaded at '$thumbnailFileName'");
                 }
+
+                $modif = true;
             }
         }
-        return false;
+
+        return $modif;
     }
 }
