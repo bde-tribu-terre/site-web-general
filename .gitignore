@@ -1,6 +1,7 @@
-/journaux/*
-!/journaux/gabarit.php
-!/journaux/index.php
+/journaux/*.pdf
+/journaux/thumbnails
+
+*.min.css
 
 .idea
 *.DS_Store
