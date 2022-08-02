@@ -115,9 +115,20 @@
                             Journaux
                         </a>
                     </li>
-                    <li class="nav-item<?php echo $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
+                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/podcasts/' ? ' active' : ''; ?>">
+                        <a class="nav-link" href="/podcasts/">
+                            Podcasts
+                        </a>
+                    </li>
+                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
                         <a class="nav-link" href="/trouver-une-salle/">
                             Trouver une salle
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/discord/">
+                            <i class="bi bi-discord" style="font-size: larger"></i>
+                            <span class="alterneur-mini">Discord</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -136,12 +147,6 @@
                         <a class="nav-link" href="https://twitter.com/Tributerre45/">
                             <i class="bi bi-twitter" style="font-size: larger"></i>
                             <span class="alterneur-mini">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/discord/">
-                            <i class="bi bi-discord" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Discord</span>
                         </a>
                     </li>
                 </ul>
