@@ -187,19 +187,11 @@
         <?php require GABARIT; ?>
     </main>
     <footer>
-        <div class="container-fluid text-center">
-            <p><strong>
-                    Vous avez des questions sur Tribu-Terre ou les derniers évènements ?<br/>
-                    <a href="/association/contact/">Contactez nous !</a>
-                </strong></p>
-            <hr>
-            <div class="texte-footer">
-                <p>Tribu-Terre est une association étudiante apolitique à but non lucratif, régie par la loi du 1er juillet 1901.</p>
-                <p><a href="/mentions-legales/">Mentions légales</a></p>
-                <p>Tribu-Terre <?= date("Y") ?> | 1A Rue de la Férollerie, 45071, Orléans Cedex 2</p>
-                <p><strong>Site Tribu-Terre version <?= VERSION_SITE ?></strong></p>
-                <p><small>Développé avec ❤️ par Anaël BARODINE</small></p>
-            </div>
+        <div class="container-fluid text-center texte-footer">
+            <p>Tribu-Terre est une association étudiante apartisane et asyndicale à but non lucratif, régie par la loi du 1er juillet 1901.</p>
+            <p><a href="/mentions-legales/">Mentions légales</a></p>
+            <p>Tribu-Terre <?= date("Y") ?> | 1A Rue de la Férollerie, 45071, Orléans Cedex 2</p>
+            <p><small>Développé avec ❤️ par Anaël BARODINE | <a href="https://github.com/bde-tribu-terre/site-web-general" target="_blank">Version <?= VERSION_SITE ?></a></small></p>
         </div>
     </footer>
 </div>
