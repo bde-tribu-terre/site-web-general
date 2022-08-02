@@ -68,7 +68,7 @@
         <div class="col-sm-8">
             <img
                     class="img-arrondi ombre"
-                    src="/resources/imgCarteAdherent.jpg"
+                    src="/resources/jpg/imgCarteAdherent.jpg"
                     alt="imgCarteAdherent"
             >
         </div>

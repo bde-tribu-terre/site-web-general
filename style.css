@@ -92,7 +92,7 @@
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 0;
-    background-image: url("/resources/fondJumbotron.jpg");
+    background-image: url("/resources/webp/fondJumbotron.webp");
 }
 
 .texte-jumbotron { /* Lueur blanche autour du texte du jumbotron */

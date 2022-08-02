@@ -5,7 +5,7 @@
             <a href="/association">
                 <img
                     class="arrondi ombre"
-                    src="resources/imgAG.jpg"
+                    src="resources/jpg/imgAG.jpg"
                     alt="Image d'accueil"
                     style="width: 100%; min-height: 200px;"
                 >
@@ -18,7 +18,7 @@
                 <h4><?= $journal->titre ?></h4>
                 <time datetime="<?= $journal->date ?>"><?= preg_replace('/^[^ ]* /', '', genererDate($journal->date)) ?></time>
                 <a href="/journaux/<?= $journal->pdf ?>" class="btn btn-var btn-block">
-                    <span class="alterneur-grand-tres-petit"><img src="/resources/imgPdf.svg" height="28" alt="(PDF)">&emsp;Lire en ligne</span>
+                    <span class="alterneur-grand-tres-petit"><img src="/resources/svg/imgPdf.svg" height="28" alt="(PDF)">&emsp;Lire en ligne</span>
                     <span class="alterneur-petit">Lire</span>
                 </a>
             </div>

@@ -40,10 +40,10 @@
                     Cliquer sur l'image pour afficher en taille réelle.
                 </small>
             </div>
-            <a href="/resources/imgBrochurePartenariats.jpg">
+            <a href="/resources/jpg/imgBrochurePartenariats.jpg">
                 <img
                         class="img-arrondi ombre"
-                        src="/resources/imgBrochurePartenariats.jpg"
+                        src="/resources/jpg/imgBrochurePartenariats.jpg"
                         alt="imgBrochurePartenariats"
                 >
             </a>

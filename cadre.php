@@ -6,7 +6,7 @@
 
     <!-- Meta tags essentiels -->
     <meta property="og:title" content="<?php echo TITLE ?>">
-    <meta property="og:image" content="/-images/imgLogoMini.png">
+    <meta property="og:image" content="/resources/webp/imgLogoMini.webp">
     <meta
             property="og:description"
             content="Tribu-Terre, Association des Étudiants en Sciences de l'Université d'Orléans."
@@ -49,7 +49,7 @@
                 <a href="/">
                     <img
                             class="logo-jumbotron"
-                            src="/resources/imgLogoMini.png"
+                            src="/resources/webp/imgLogoMini.webp"
                             alt="Logo"
                             <?php echo $_SERVER["REQUEST_URI"] == '/' ? 'style="height: 300px"' : ''; ?>
                     >
