@@ -38,8 +38,18 @@
     <!-- Feuille de style générale -->
     <link rel="stylesheet" type="text/css" href="/style.min.css">
 
+    <?php if (defined("STYLE")): ?>
+        <!-- Feuille de style du gabarit -->
+        <link rel="stylesheet" type="text/css" href="<?= STYLE ?>">
+    <?php endif; ?>
+
     <!-- Fonctions Javascript -->
     <script src="/script.min.js"></script>
+
+    <?php if (defined("SCRIPT")): ?>
+        <!-- Script du gabarit -->
+        <link rel="stylesheet" type="text/css" href="<?= SCRIPT ?>">
+    <?php endif; ?>
 </head>
 <body>
 <div class="page-complete">
