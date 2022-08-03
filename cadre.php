@@ -69,18 +69,24 @@
         </div>
 
         <nav class="navbar navbar-expand-sm py-0">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader"> <!-- C'est le petit bouton menu quand l'écran est trop petit -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navigationHeader"> <!-- Et ça c'est quand l'écran est assez grand -->
+            <div class="navbar-collapse collapse" id="navigationHeader">
                 <ul class="nav navbar-nav">
                     <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/' ? ' active' : ''; ?>">
-                        <a class="nav-link" href="/">Accueil</a>
+                        <a class="nav-link" href="/">
+                            <i class="bi bi-house-door-fill" style="font-size: larger"></i>
+                            <span class="alterneur-mini">Accueil</span>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">À propos <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-grid-fill" style="font-size: larger"></i>
+                            À propos <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/' ? ' active' : ''; ?>" href="/association/">
@@ -122,23 +128,26 @@
                     </li>
                     <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/journaux/' ? ' active' : ''; ?>">
                         <a class="nav-link" href="/journaux/">
+                            <i class="bi bi-newspaper" style="font-size: larger"></i>
                             Journaux
                         </a>
                     </li>
                     <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/podcasts/' ? ' active' : ''; ?>">
                         <a class="nav-link" href="/podcasts/">
+                            <i class="bi bi-mic-fill" style="font-size: larger"></i>
                             Podcasts
                         </a>
                     </li>
                     <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
                         <a class="nav-link" href="/trouver-une-salle/">
+                            <i class="bi bi-geo-fill" style="font-size: larger"></i>
                             Trouver une salle
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/discord/">
                             <i class="bi bi-discord" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Discord</span>
+                            Serveurs Discord
                         </a>
                     </li>
                     <li class="nav-item">
