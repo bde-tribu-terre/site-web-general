@@ -9,15 +9,12 @@
                         <h3><?= $journal->titre ?></h3>
                     </div>
                     <div class="row">
-                        <time datetime="<?= $journal->date ?>"><?= preg_replace('/^[^ ]* /', '', genererDate($journal->date)) ?></time>
-                    </div>
-                    <div class="row">
                         <img class="miniature" src="<?= "thumbnails/$journal->pdf.webp" ?>" alt="miniatureJournal">
                     </div>
                     <div class="row">
                         <a href="<?= $journal->pdf ?>" class="btn btn-var btn-block" style="position: relative; z-index: 1;">
-                            <h4 class="alterneur-grand-tres-petit"><img src="/resources/svg/imgPdf.svg" height="28" alt="(PDF)">&emsp;Lire en ligne</h4>
-                            <h4 class="alterneur-petit">Lire</h4>
+                            <span class="alterneur-grand-tres-petit"><img src="/resources/svg/imgPdf.svg" height="28" alt="(PDF)">&emsp;Lire en ligne</span>
+                            <span class="alterneur-petit">Lire</span>
                         </a>
                     </div>
                 </div>
