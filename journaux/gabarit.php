@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Journaux</h3>
+    <h1>Journaux</h1>
     <hr>
     <?php foreach ($journaux as $journal): ?>
         <?php if ($journal->count % 3 == 0): ?><div class="row"><?php endif ?>

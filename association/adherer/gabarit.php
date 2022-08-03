@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Pourquoi adhérer ?</h3>
+    <h1>Pourquoi adhérer ?</h1>
     <hr>
     <div class="row">
         <!-- Auteur : Anaël BARODINE. -->

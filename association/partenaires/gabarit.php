@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Partenaires</h3>
+    <h1>Partenaires</h1>
     <hr>
     <div class="row">
         <!-- Auteur : William ABESSOLO. -->

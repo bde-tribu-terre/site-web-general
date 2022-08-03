@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Trouver une salle</h3>
+    <h1>Trouver une salle</h1>
     <hr>
     <div class="row">
         <div class="col-sm-4"></div>

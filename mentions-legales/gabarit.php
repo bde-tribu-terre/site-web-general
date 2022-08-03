@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Mentions légales</h3>
+    <h1>Mentions légales</h1>
     <hr>
     <div class="row">
         <div class="col-sm-1"></div>

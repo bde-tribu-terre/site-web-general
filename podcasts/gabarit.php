@@ -1,4 +1,4 @@
 <div class="container text-center">
-    <h3>Podcasts</h3>
+    <h1>Podcasts</h1>
     <hr>
 </div>

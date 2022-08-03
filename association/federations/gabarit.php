@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Réseau associatif</h3>
+    <h1>Réseau associatif</h1>
     <hr>
     <div class="row">
         <!-- Auteur : Xxxx XXXX. -->

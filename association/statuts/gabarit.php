@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Statuts</h3>
+    <h1>Statuts</h1>
     <hr>
     <div class="row">
         <!-- Auteur : Jade BEAUMONT. -->

@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h3>Contact</h3>
+    <h1>Contact</h1>
     <hr>
     <div class="row">
         <!-- Auteur : Jade BEAUMONT. -->
