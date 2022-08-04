@@ -124,6 +124,25 @@
                                     Contact
                                 </a>
                             </li>
+                            <li role="separator" class="divider">
+                            <li>
+                                <a class="dropdown-item" href="https://www.instagram.com/tribu.terre/">
+                                    <i class="bi bi-instagram" style="font-size: larger"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.facebook.com/bdeTribuTerre/">
+                                    <i class="bi bi-facebook" style="font-size: larger"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://twitter.com/Tributerre45/">
+                                    <i class="bi bi-twitter" style="font-size: larger"></i>
+                                    Twitter
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/journaux/' ? ' active' : ''; ?>">
@@ -148,24 +167,6 @@
                         <a class="nav-link" href="/discord/">
                             <i class="bi bi-discord" style="font-size: larger"></i>
                             Serveurs Discord
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.instagram.com/tribu.terre/">
-                            <i class="bi bi-instagram" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/bdeTribuTerre/">
-                            <i class="bi bi-facebook" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://twitter.com/Tributerre45/">
-                            <i class="bi bi-twitter" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Twitter</span>
                         </a>
                     </li>
                 </ul>
