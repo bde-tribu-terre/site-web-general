@@ -125,8 +125,14 @@ class TransloaditRequest {
 
         foreach ($data["results"] as $step => $results) {
             if ($step == ":output") {
-                foreach ($results as $result)
-                    $resultsUrls[] = $result["ssl_url"];
+                foreach ($this->files as $originalFile) {
+                    $originalFileExploded = explode("/", $originalFile);
+                    foreach ($results as $result) {
+                        if ($result["original_name"] == end($originalFileExploded)) {
+                            $resultsUrls[] = $result["ssl_url"];
+                        }
+                    }
+                }
             }
         }
 
