@@ -7,7 +7,7 @@
             <a href="/association">
                 <img
                     class="arrondi ombre"
-                    src="resources/jpg/imgAG.jpg"
+                    src="resources/webp/teamVioletteAgo.webp"
                     alt="Image d'accueil"
                     style="width: 100%; min-height: 200px;"
                 >
