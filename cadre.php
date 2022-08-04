@@ -132,8 +132,8 @@
                             Journaux
                         </a>
                     </li>
-                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/podcasts/' ? ' active' : ''; ?>">
-                        <a class="nav-link" href="/podcasts/">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.podcastics.com/podcast/tribu-sciences_1/" target="_blank">
                             <i class="bi bi-mic-fill" style="font-size: larger"></i>
                             Podcasts
                         </a>
