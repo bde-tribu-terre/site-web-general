@@ -38,18 +38,18 @@
     <!-- Feuille de style générale -->
     <link rel="stylesheet" type="text/css" href="/style.min.css">
 
-    <?php if (defined("STYLE")): ?>
-        <!-- Feuille de style du gabarit -->
-        <link rel="stylesheet" type="text/css" href="<?= STYLE ?>">
-    <?php endif; ?>
+    <!-- Feuilles de style du gabarit -->
+    <?php if (defined("STYLES")): foreach (STYLES as $style): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $style ?>">
+    <?php endforeach; endif; ?>
 
     <!-- Fonctions Javascript -->
     <script src="/script.min.js"></script>
 
-    <?php if (defined("SCRIPT")): ?>
-        <!-- Script du gabarit -->
-        <link rel="stylesheet" type="text/css" href="<?= SCRIPT ?>">
-    <?php endif; ?>
+    <!-- Scripts du gabarit -->
+    <?php if (defined("SCRIPTS")): foreach (SCRIPTS as $script): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $script ?>">
+    <?php endforeach; endif; ?>
 </head>
 <body>
 <div class="page-complete">
