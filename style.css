@@ -148,9 +148,6 @@
     .alterneur-petit {
         display: block !important;
     }
-    h3 {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 1199px) {
@@ -195,7 +192,7 @@ footer {
 
 .texte-footer {
     font-size: smaller;
-    line-height: 80%;
+    line-height: initial;
 }
 
 /*######################################################################################################################
