@@ -100,8 +100,6 @@
                                     Adhérer
                                 </a>
                             </li>
-                            <li role="separator" class="divider">
-                            </li>
                             <li>
                                 <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/federations/' ? ' active' : ''; ?>" href="/association/federations/">
                                     Fédérations
@@ -112,14 +110,12 @@
                                     Statuts
                                 </a>
                             </li>
-                            <li role="separator" class="divider">
-                            </li>
                             <li>
                                 <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/contact/' ? ' active' : ''; ?>" href="/association/contact/">
                                     Contact
                                 </a>
                             </li>
-                            <li role="separator" class="divider">
+                            <li role="separator" class="divider"></li>
                             <li>
                                 <a class="dropdown-item" href="https://www.instagram.com/tribu.terre/">
                                     <i class="bi bi-instagram" style="font-size: larger"></i>
