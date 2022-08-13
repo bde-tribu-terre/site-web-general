@@ -106,13 +106,6 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/partenaires/' ? ' active' : ''; ?>" href="/association/partenaires/">
-                                    Partenaires
-                                </a>
-                            </li>
-                            <li role="separator" class="divider">
-                            </li>
-                            <li>
                                 <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
                                     Statuts
                                 </a>
