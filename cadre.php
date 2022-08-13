@@ -157,9 +157,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/discord/">
+                        <a class="nav-link" href="https://discord.gg/EfkUuC2">
                             <i class="bi bi-discord" style="font-size: larger"></i>
-                            Serveurs Discord
+                            Serveur Discord
                         </a>
                     </li>
                 </ul>
