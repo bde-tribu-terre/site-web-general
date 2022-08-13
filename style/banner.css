@@ -1,0 +1,44 @@
+.banner { /* Retire la marge par défaut (vu qu'il faut coller la navbar) */
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.banner p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    text-shadow:
+            5px 5px 5px #f3f3f3,
+            -5px 5px 5px #f3f3f3,
+            5px -5px 5px #f3f3f3,
+            -5px -5px 5px #f3f3f3;
+}
+
+.texte-jumbotron { /* Lueur blanche autour du texte du jumbotron */
+}
+
+.logo-jumbotron {
+    height: 300px;
+}
+
+@media (max-width: 767px) { /* Le jumbotron ne sera pas fixe sur mobile (problèmes de performances) */
+    .jumbotron {
+        background-attachment: inherit;
+        padding: 10px 0 10px 0;
+    }
+
+    .logo-jumbotron {
+        height: 150px;
+    }
+
+    .texte-jumbotron {
+        display: none;
+    }
+}

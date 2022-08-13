@@ -1,0 +1,33 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+}
+
+.well > h1,
+.well > h2,
+.well > h3,
+.well > h4,
+.well > h5 { /* On retire la marge sous les titres dans les wells */
+    margin-top: 0;
+}
+
+a,
+a:hover { /* On change la couleur des liens vers du rouge */
+    color: var(--prim);
+}
+
+h1,
+h2,
+h3 {
+    font-size: x-large;
+}
+
+.pc { /* Petites capitales */
+    font-variant: small-caps;
+}
+
+.bloc-paragraphes p {
+    line-height: 1.68;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}

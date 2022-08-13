@@ -1,22 +1,6 @@
 /*######################################################################################################################
 ########################################################################################################################
 ###                                                                                                                  ###
-###                                                    VARIABLES                                                     ###
-###                                                                                                                  ###
-########################################################################################################################
-######################################################################################################################*/
-:root {
-    --prim: #d9534f; /* Primaire neutre */
-    --prim-border: #d43f3a; /* Bordure de primaire */
-    --prim-select: #c9302c; /* Primaire sélectionné (et liens sur blanc) */
-    --prim-select-double: #ac2925; /* Primaire sélectionné double */
-    --prim-select-double-border: #761c19; /* Bordure de primaire sélectionné double */
-    --sec: white; /* Secondaire (liens sur primaire) */
-}
-
-/*######################################################################################################################
-########################################################################################################################
-###                                                                                                                  ###
 ###                                                      NAVBAR                                                      ###
 ###                                                                                                                  ###
 ########################################################################################################################
@@ -88,50 +72,6 @@
 
 .navbar .dropdown-menu { /* Couleur de background de l'intérieur du menu déroulant */
     background-color: var(--prim);
-}
-
-/*######################################################################################################################
-########################################################################################################################
-###                                                                                                                  ###
-###                                                    JUMBOTRON                                                     ###
-###                                                                                                                  ###
-########################################################################################################################
-######################################################################################################################*/
-.jumbotron { /* Retire la marge par défaut (vu qu'il faut coller la navbar) */
-    background-clip: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 0;
-    background-image: url("/resources/webp/fondJumbotron.webp");
-}
-
-.texte-jumbotron { /* Lueur blanche autour du texte du jumbotron */
-    text-shadow:
-            5px 5px 5px #f3f3f3,
-            -5px 5px 5px #f3f3f3,
-            5px -5px 5px #f3f3f3,
-            -5px -5px 5px #f3f3f3;
-}
-
-.logo-jumbotron {
-    height: 300px;
-}
-
-@media (max-width: 767px) { /* Le jumbotron ne sera pas fixe sur mobile (problèmes de performances) */
-    .jumbotron {
-        background-attachment: inherit;
-        padding: 10px 0 10px 0;
-    }
-
-    .logo-jumbotron {
-        height: 150px;
-    }
-
-    .texte-jumbotron {
-        display: none;
-    }
 }
 
 /*######################################################################################################################
@@ -287,10 +227,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.pc { /* Petites capitales */
-    font-variant: small-caps;
-}
-
 /*######################################################################################################################
 ########################################################################################################################
 ###                                                                                                                  ###
@@ -309,21 +245,9 @@ footer {
 ###                                                                                                                  ###
 ########################################################################################################################
 ######################################################################################################################*/
-.well > h1, .well > h2, .well > h3, .well > h4, .well > h5 { /* On retire la marge sous les titres dans les wells */
-    margin-top: 0;
-}
-
-a, a:hover { /* On change la couleur des liens vers du rouge */
-    color: var(--prim);
-}
-
 .div-miniature-articles { /* Limite la largeur de la miniature des articles dans la page articles */
     max-width: 480px;
     display: inline-block;
-}
-
-h1, h2, h3 {
-    font-size: x-large;
 }
 
 /*######################################################################################################################
