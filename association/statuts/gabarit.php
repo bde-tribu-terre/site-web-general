@@ -2,34 +2,41 @@
     <h1>Statuts</h1>
     <hr>
     <div class="row">
-        <!-- Auteur : Jade BEAUMONT. -->
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-            <p class="text-justify retrait">
-                Les statuts sont une sorte de « contrat d'association » regroupant toutes les règles que doit respecter
-                Tribu-Terre. Ils ont pour but d’encadrer ses activités sur l’aspect juridique et financier.
-            </p>
-            <p class="text-justify retrait">
-                Sachez par exemple que selon la loi de 1901, une association doit être à but non lucratif, qu’un bureau
-                restreint est composé d’au moins un(e) président(e), un(e) trésorier(e) et un(e) secrétaire.
-            </p>
-            <p class="text-justify retrait">
-                Ces statuts sont envoyés à la préfecture pour renseigner sur  le nom de l’association, son adresse
-                officielle et son fonctionnement, ainsi le nom des personnes en charge de l'administration lors de sa
-                création. Par la suite, chaque fois que les statuts sont modifiés ou qu'il y a un changement dans le
-                bureau, il faut les déclarer en renvoyant les documents à la préfecture.
-            </p>
-            <p class="text-justify retrait">
-                <a href="/association/statuts/Statuts-2021-03-29.pdf">
-                    Consulter les statuts de l'association.
-                </a>
-            </p>
-            <p class="text-justify retrait">
-                <a href="/association/statuts/RI-2021-04-11.pdf">
-                    Consulter le règlement intérieur de l'association.
-                </a>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="bloc-paragraphes">
+                <p>
+                    Les statuts sont le mode d’emploi de l’association regroupant les règles que Tribu-Terre doit
+                    respecter. Ils ont pour but d’encadrer juridiquement les activités de l’association. Ils ne peuvent
+                    être changés qu’exceptionnellement, lorsque le besoin est impératif, lors d’une Assemblée Générale
+                    Extraordinaire.
+                </p>
+                <p>
+                    Le règlement intérieur complète les statuts dans les dispositions qui s’adaptent davantage au
+                    quotidien. Contrairement aux statuts, le règlement intérieur peut être modifié sur décision
+                    collégiale du conseil d’administration à tout moment.
+                </p>
+                <p>
+                    Ces documents sont transmis à la préfecture du Loiret pour permettre à Tribu-Terre de disposer d’une
+                    identité juridique, permettant de réaliser des actions au nom de l’association.
+                </p>
+                <p>
+                    [Voir l’historique des statuts et du RI (lecture dans un dossier)]
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>
+                [STATUTS]
             </p>
         </div>
-        <div class="col-sm-1"></div>
+        <div class="col-sm-6">
+            <p>
+                [RI]
+            </p>
+        </div>
     </div>
 </div>
