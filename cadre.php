@@ -54,148 +54,152 @@
     <?php endforeach; endif; ?>
 </head>
 <body>
-<div class="page-complete">
-    <header>
-        <div class="banner" style="background-image: url('/resources/webp/fondJumbotron.webp');">
-            <a href="/">
-                <img
-                        src="/resources/webp/imgLogoMini.webp"
-                        alt="Logo de Tribu-Terre"
-                        <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="height: 300px"' : ''; ?>
-                >
-            </a>
-            <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' style="display: revert"' : ''; ?>>
-                Association des Étudiants en Sciences et en Santé de l'Université d'Orléans
-            </p>
-        </div>
+<header role="banner" style="background-image: url('/resources/webp/fondJumbotron.webp');">
+    <a href="/">
+        <img
+                src="/resources/webp/imgLogoMini.webp"
+                alt="Logo de Tribu-Terre"
+                <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="height: 300px"' : ''; ?>
+        >
+    </a>
+    <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' style="display: revert"' : ''; ?>>
+        Association des Étudiants en Sciences et en Santé de l'Université d'Orléans
+    </p>
+</header>
 
-        <nav class="navbar navbar-expand-sm py-0">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navigationHeader">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/' ? ' active' : ''; ?>">
-                        <a class="nav-link" href="/">
-                            <i class="bi bi-house-door-fill" style="font-size: larger"></i>
-                            <span class="alterneur-mini">Accueil</span>
+<nav class="navbar navbar-expand-sm py-0">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navigationHeader">
+        <ul class="nav navbar-nav">
+            <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/' ? ' active' : ''; ?>">
+                <a class="nav-link" href="/">
+                    <i class="bi bi-house-door-fill" style="font-size: larger"></i>
+                    <span class="alterneur-mini">Accueil</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-grid-fill" style="font-size: larger"></i>
+                    À propos <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/' ? ' active' : ''; ?>" href="/association/">
+                            Tribu-Terre
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="bi bi-grid-fill" style="font-size: larger"></i>
-                            À propos <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/' ? ' active' : ''; ?>" href="/association/">
-                                    Tribu-Terre
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/adherer/' ? ' active' : ''; ?>" href="/association/adherer/">
-                                    Adhérer
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/federations/' ? ' active' : ''; ?>" href="/association/federations/">
-                                    Fédérations
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
-                                    Statuts
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/contact/' ? ' active' : ''; ?>" href="/association/contact/">
-                                    Contact
-                                </a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="https://www.instagram.com/tribu.terre/">
-                                    <i class="bi bi-instagram" style="font-size: larger"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="https://www.facebook.com/bdeTribuTerre/">
-                                    <i class="bi bi-facebook" style="font-size: larger"></i>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="https://twitter.com/Tributerre45/">
-                                    <i class="bi bi-twitter" style="font-size: larger"></i>
-                                    Twitter
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/journaux/' ? ' active' : ''; ?>">
-                        <a class="nav-link" href="/journaux/">
-                            <i class="bi bi-newspaper" style="font-size: larger"></i>
-                            Journaux
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/adherer/' ? ' active' : ''; ?>" href="/association/adherer/">
+                            Adhérer
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.podcastics.com/podcast/tribu-sciences_1/" target="_blank">
-                            <i class="bi bi-mic-fill" style="font-size: larger"></i>
-                            Podcasts
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/federations/' ? ' active' : ''; ?>" href="/association/federations/">
+                            Fédérations
                         </a>
                     </li>
-                    <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
-                        <a class="nav-link" href="/trouver-une-salle/">
-                            <i class="bi bi-geo-fill" style="font-size: larger"></i>
-                            Trouver une salle
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
+                            Statuts
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/EfkUuC2">
-                            <i class="bi bi-discord" style="font-size: larger"></i>
-                            Serveur Discord
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/contact/' ? ' active' : ''; ?>" href="/association/contact/">
+                            Contact
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="https://www.instagram.com/tribu.terre/">
+                            <i class="bi bi-instagram" style="font-size: larger"></i>
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://www.facebook.com/bdeTribuTerre/">
+                            <i class="bi bi-facebook" style="font-size: larger"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="https://twitter.com/Tributerre45/">
+                            <i class="bi bi-twitter" style="font-size: larger"></i>
+                            Twitter
                         </a>
                     </li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="row" <?= empty($GLOBALS['messages']) || GABARIT == 'erreur.php' ? ' style="display: none"' : '' ?>>
-            <div class="col-sm-5"></div>
-            <div class="col-sm-2">
-                <div class="well">
-                    <h3 class="text-center">Message(s)</h3>
-                    <hr>
-                    <ul class="text-left">
-                        <?php foreach ($GLOBALS['messages'] as $arrMessage): ?>
-                            <li><?= $arrMessage[0] ?> : <?= $arrMessage[1] ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-5"></div>
-        </div>
+            </li>
+            <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/journaux/' ? ' active' : ''; ?>">
+                <a class="nav-link" href="/journaux/">
+                    <i class="bi bi-newspaper" style="font-size: larger"></i>
+                    Journaux
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.podcastics.com/podcast/tribu-sciences_1/" target="_blank">
+                    <i class="bi bi-mic-fill" style="font-size: larger"></i>
+                    Podcasts
+                </a>
+            </li>
+            <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
+                <a class="nav-link" href="/trouver-une-salle/">
+                    <i class="bi bi-geo-fill" style="font-size: larger"></i>
+                    Trouver une salle
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://discord.gg/EfkUuC2">
+                    <i class="bi bi-discord" style="font-size: larger"></i>
+                    Serveur Discord
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
+<main>
+    <?php if (!empty($GLOBALS['messages'])): ?>
+        <section class="container" role="alert">
+            <h1>Message(s)</h1>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="well">
+                        <ul class="text-left">
+                            <?php foreach ($GLOBALS['messages'] as $arrMessage): ?>
+                                <li><?= $arrMessage[0] ?> : <?= $arrMessage[1] ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </section>
+    <?php endif; ?>
+
+    <section class="container" role="document">
         <?php require GABARIT; ?>
-    </main>
-    <footer>
-        <p>
-            Tribu-Terre est une association étudiante apartisane et asyndicale à but non lucratif, régie par la loi du 1er juillet 1901.
-        </p>
-        <p>
-            <a href="/mentions-legales/">Mentions légales</a>
-        </p>
-        <p>
-            Tribu-Terre <?= date("Y") ?> | 1A Rue de la Férollerie, 45071, Orléans Cedex 2
-        </p>
-        <p>
-            <small>Développé avec ❤️ par Anaël BARODINE | <a href="https://github.com/bde-tribu-terre/site-web-general" target="_blank">Version <?= VERSION_SITE ?></a></small>
-        </p>
-    </footer>
-</div>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Tribu-Terre est une association étudiante apartisane et asyndicale à but non lucratif, régie par la loi du 1er juillet 1901.
+    </p>
+    <p>
+        <a href="/mentions-legales/">Mentions légales</a>
+    </p>
+    <p>
+        Tribu-Terre <?= date("Y") ?> | 1A Rue de la Férollerie, 45071, Orléans Cedex 2
+    </p>
+    <p>
+        <small>Développé avec ❤️ par Anaël BARODINE | <a href="https://github.com/bde-tribu-terre/site-web-general" target="_blank">Version <?= VERSION_SITE ?></a></small>
+    </p>
+</footer>
 </body>
 </html>

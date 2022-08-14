@@ -1,4 +1,4 @@
-.banner { /* Retire la marge par défaut (vu qu'il faut coller la navbar) */
+header { /* Retire la marge par défaut (vu qu'il faut coller la navbar) */
     background-clip: border-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,7 @@
     padding-bottom: 48px;
 }
 
-.banner p {
+header p {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200;
@@ -21,21 +21,21 @@
             -5px -5px 5px #f3f3f3;
 }
 
-.banner img {
+header img {
     height: 300px;
 }
 
 @media (max-width: 767px) { /* Le jumbotron ne sera pas fixe sur mobile (problèmes de performances) */
-    .banner {
+    header {
         background-attachment: revert;
         padding: 10px 0 10px 0;
     }
 
-    .banner img {
+    header img {
         height: 150px;
     }
 
-    .banner p {
+    header p {
         display: none;
     }
 }
