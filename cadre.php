@@ -162,28 +162,24 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="container">
-            <div<?= empty($GLOBALS['messages']) || GABARIT == 'erreur.php' ? ' style="display: none"' : '' ?>>
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
-                        <div class="well">
-                            <h3 class="text-center">Message(s)</h3>
-                            <hr>
-                            <ul class="text-left">
-                                <?php foreach ($GLOBALS['messages'] as $arrMessage): ?>
-                                    <li><?= $arrMessage[0] ?> : <?= $arrMessage[1] ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-        </div>
     </header>
     <main>
+        <div class="row" <?= empty($GLOBALS['messages']) || GABARIT == 'erreur.php' ? ' style="display: none"' : '' ?>>
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2">
+                <div class="well">
+                    <h3 class="text-center">Message(s)</h3>
+                    <hr>
+                    <ul class="text-left">
+                        <?php foreach ($GLOBALS['messages'] as $arrMessage): ?>
+                            <li><?= $arrMessage[0] ?> : <?= $arrMessage[1] ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+
         <?php require GABARIT; ?>
     </main>
     <footer>
