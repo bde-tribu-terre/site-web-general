@@ -21,24 +21,21 @@
             -5px -5px 5px #f3f3f3;
 }
 
-.texte-jumbotron { /* Lueur blanche autour du texte du jumbotron */
-}
-
-.logo-jumbotron {
+.banner img {
     height: 300px;
 }
 
 @media (max-width: 767px) { /* Le jumbotron ne sera pas fixe sur mobile (problèmes de performances) */
-    .jumbotron {
-        background-attachment: inherit;
+    .banner {
+        background-attachment: revert;
         padding: 10px 0 10px 0;
     }
 
-    .logo-jumbotron {
+    .banner img {
         height: 150px;
     }
 
-    .texte-jumbotron {
+    .banner p {
         display: none;
     }
 }
