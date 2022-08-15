@@ -22,7 +22,7 @@ header p {
 }
 
 header img {
-    height: 300px;
+    width: 300px;
 }
 
 @media (max-width: 767px) { /* Le jumbotron ne sera pas fixe sur mobile (problèmes de performances) */
