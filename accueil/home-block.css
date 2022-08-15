@@ -6,6 +6,7 @@
     border-radius: 100%;
     flex: 0 1 auto;
     width: 30%;
+    max-width: 200px;
     height: fit-content;
 }
 

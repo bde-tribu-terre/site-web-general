@@ -22,7 +22,7 @@ EOF
 
 // Appel du cadre
 const TITLE = 'Accueil';
-const GABARIT = 'gabarit.php';
-const STYLES = ["home-block.css"];
-const SCRIPTS = ["home-block.js"];
+const GABARIT = "accueil/gabarit.php";
+const STYLES = ["accueil/home-block.css"];
+const SCRIPTS = ["accueil/home-block.js"];
 require ROOT . 'cadre.php';
