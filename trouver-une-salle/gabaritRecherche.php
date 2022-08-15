@@ -15,7 +15,7 @@
 <div class="row" <?php echo NOMBRE > 1 ? 'style="display: none"' : ''; ?>>
     <div class="col-sm-12">
         <h3>Localisation du bâtiment</h3>
-        <div class="img-arrondi ombre text-center" style="height: 50vh">
+        <div class="arrondi ombre text-center" style="height: 50vh; width: 100%">
             <iframe
                     style="border:none;overflow:hidden"
                     width="100%"
