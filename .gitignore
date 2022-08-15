@@ -2,6 +2,7 @@
 /journaux/thumbnails
 
 *.min.css
+*.min.js
 
 .idea
 *.DS_Store
