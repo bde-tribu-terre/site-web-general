@@ -36,9 +36,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Feuilles de style générales -->
-    <?php foreach (scandir(ROOT . "style") as $file): if (str_ends_with($file, ".min.css")): ?>
-        <link rel="stylesheet" type="text/css" href="<?= ROOT . "style/" . $file ?>">
-    <?php endif; endforeach; ?>
+    <link rel="stylesheet" type="text/css" href="/style/compile.php">
 
     <!-- Feuilles de style du gabarit -->
     <?php if (defined("STYLES")): foreach (STYLES as $style): ?>
