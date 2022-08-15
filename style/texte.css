@@ -16,10 +16,12 @@ a:hover { /* On change la couleur des liens vers du rouge */
     color: var(--prim);
 }
 
-h1,
-h2,
-h3 {
-    font-size: x-large;
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.5em;
 }
 
 .pc { /* Petites capitales */
