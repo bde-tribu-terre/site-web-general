@@ -59,7 +59,7 @@
         <img
                 src="/resources/webp/imgLogoMini.webp"
                 alt="Logo de Tribu-Terre"
-                <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="height: 300px"' : ''; ?>
+                <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="width: 300px"' : ''; ?>
         >
     </a>
     <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' style="display: revert"' : ''; ?>>
