@@ -10,21 +10,29 @@
                 Source, et dirigée uniquement par et pour des étudiants.
             </p>
         </div>
-        <img class="arrondi ombre" src="/resources/webp/teamVioletteAgo.webp" alt="Photo des membre à l'Assemblée Générale d'avril 2022">
     </div>
     <div class="col-sm-2"></div>
 </div>
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Organisation</h2>
-            <p>
-                [GROUPE] À destination de tous les étudiants de Licence et Master dans les domaines des Sciences et de la
-                Santé, les statuts de Tribu-Terre ne permettent qu’aux étudiants de ces filières d’accéder à l’équipe
-                dirigeante de l’association. Néanmoins, l’adhésion est possible pour tout individu, nos événements étant
-                tous ouverts à tous.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo de l'équipe"
+            >
+            <div>
+                <h2>Pour tous</h2>
+                <p>
+                    À destination de tous les étudiants de Licence et Master dans les domaines des Sciences et de la Santé,
+                    tout étudiant de ces filières peut intégrer l’équipe dirigeante de l’association.
+                </p>
+                <p>
+                    L’adhésion, quant à elle, pour pouvoir profiter de ce que Tribu-Terre propose, est possible pour tout
+                    individu. Nos événements sont tous ouverts à tous.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -32,13 +40,20 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Défense des droits des étudiants</h2>
-            <p>
-                [BALANCE] Administrativement indépendante de toute institution et de tout organisme, privé comme public,
-                elle œuvre à la promotion et à la defense des étudiants, de leurs droits et de leurs intérêts, notamment
-                auprès de la faculté, l’UFR Sciences et Techniques, par l’intermédiaire de ses élus étudiants.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo d'un conseil de gestion ou photo de la faculté"
+            >
+            <div>
+                <h2>Défense des droits des étudiants</h2>
+                <p>
+                    Administrativement indépendante de toute institution et de tout organisme, privé comme public,
+                    Tribu-Terre œuvre à la promotion et à la defense des étudiants, de leurs droits et de leurs intérêts,
+                    notamment auprès de la faculté, l’UFR Sciences et Techniques, par l’intermédiaire de ses élus étudiants.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -46,14 +61,21 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Promotion de la Culture Scientifique</h2>
-            <p>
-                [ERLENMEYER] De plus, elle contribue à promouvoir la culture scientifique dans le milieu de l’enseignement
-                supérieur, par des actions comme l’organisation de conférences gratuites faisant intervenir des
-                spécialistes, ainsi que la vulgarisation par les étudiants eux-mêmes, à travers son journal collaboratif
-                mensuel Omni-Sciences.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo d'une conférence ou du journal"
+            >
+            <div>
+                <h2>Culture Scientifique</h2>
+                <p>
+                    Tribu-Terre contribue à promouvoir la culture scientifique dans le milieu de l’enseignement supérieur,
+                    par des actions comme l’organisation de conférences gratuites faisant intervenir des spécialistes, ainsi
+                    que la vulgarisation par les étudiants eux-mêmes, à travers son journal collaboratif mensuel
+                    Omni-Sciences.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -61,14 +83,24 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Sensibilisation aux problématiques environnementales</h2>
-            <p>
-                [PLANTE] La conscience écologique, sociale et durable en tant que grand enjeu du monde d’aujourd’hui, est
-                également une problématique qui est très importante aux yeux de Tribu-Terre. Des actions et des
-                communications de sensibilisation sont mis en place, et la contribution à un jardin de permaculture au cœur
-                du campus Universitaire est proposé à tous les étudiants.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo du jardin de permaculture"
+            >
+            <div>
+                <h2>Développement Durable</h2>
+                <p>
+                    La conscience écologique, sociale et durable en tant que grand enjeu du monde d’aujourd’hui, est
+                    également une problématique qui est très importante aux yeux de Tribu-Terre.
+                    Des actions et des
+                </p>
+                <p>
+                    communications de sensibilisation sont mis en place et la contribution à un jardin de permaculture au
+                    cœur du campus est proposé à tous les étudiants.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -76,14 +108,23 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Événements de cohésion étudiante</h2>
-            <p>
-                [HANDSHAKES] Dans l’objectif de faire vivre la vie du campus, et lutter contre l’isolement étudiant surtout
-                dans les premières années d’études, Tribu-Terre organise régulièrement des soirées à thème, notamment en
-                bar. Systématiquement, une équipe s’assure qu’aucune violence physique, verbale ou sexuelle ne soit commise
-                et veille à la consommation d’alcool.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo d'une soirée"
+            >
+            <div>
+                <h2>Cohésion</h2>
+                <p>
+                    Dans l’objectif de faire vivre la vie du campus et de lutter contre l’isolement étudiant surtout dans
+                    les premières années d’études, Tribu-Terre organise régulièrement des soirées à thème, notamment en bar.
+                </p>
+                <p>
+                    Systématiquement, une équipe s’assure qu’aucune violence physique, verbale ou sexuelle ne soit commise
+                    et veille à la consommation d’alcool.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -91,13 +132,20 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Parrainage</h2>
-            <p>
-                [PERSONNES] Pour faciliter l’intégration au sein des études et de la vie de campus des étudiants en première
-                année, Tribu-Terre organise un parrainage annuel : des étudiants des années supérieures volontaires prennent
-                en charge un fillot ou une fillote afin de l’aider et l’accompagner scolairement et socialement.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo de la soirée parrainage"
+            >
+            <div>
+                <h2>Parrainage</h2>
+                <p>
+                    Pour faciliter l’intégration au sein des études et de la vie de campus des étudiants en première année,
+                    Tribu-Terre organise un parrainage annuel : des étudiants des années supérieures volontaires prennent en
+                    charge un fillot ou une fillote afin de l’aider et l’accompagner scolairement et socialement.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -105,14 +153,21 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Projets d’envergure</h2>
-            <p>
-                [COSTUME] Des projets de grande envergure sont organisés pour permettre aux étudiants de vivre des moments
-                forts qui, bien souvent, leur sont impossibles d’organiser par eux-mêmes. Week-end de ski, gala étudiant, …
-                Sont autant d’événements que Tribu-Terre prépare avec soin chaque année, avec comme objectif un résultat des
-                plus grandioses.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo du ski"
+            >
+            <div>
+                <h2>Projets d’envergure</h2>
+                <p>
+                    Des projets de grande envergure sont organisés pour permettre aux étudiants de vivre des moments forts
+                    qui, bien souvent, leur sont impossibles d’organiser par eux-mêmes. Week-end de ski, gala étudiant, …
+                    sont autant d’événements que Tribu-Terre prépare avec soin chaque année, avec comme objectif un résultat
+                    des plus grandioses.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -120,15 +175,24 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div>
-            <h2>Tissu associatif</h2>
-            <p>
-                [ROUAGE] Tribu-Terre faisant partie du tissu associatif étudiant, elle s’ancre officiellement dans ce
-                dernier à l’échelle locale, par son adhésion à ÔCampus, et a l’échelle nationale, par son adhésion à la
-                FNEB. Les fédérations permettent à Tribu-Terre de porter à de plus grandes échelles la voix des étudiants en
-                Sciences et Santé d’Orléans, et a bénéficier d’un solide réseau de compétences associatives pour assurer sa
-                pérennité.
-            </p>
+        <div class="home-block">
+            <img
+                    class="ombre home-image"
+                    src="/resources/png/unnamed.png"
+                    alt="Photo d'un CA de la FNEB"
+            >
+            <div>
+                <h2>Tissu associatif</h2>
+                <p>
+                    Tribu-Terre faisant partie du tissu associatif étudiant, elle s’ancre officiellement dans ce dernier à
+                    l’échelle locale, par son adhésion à ÔCampus, et a l’échelle nationale, par son adhésion à la FNEB.
+                </p>
+                <p>
+                    Les fédérations permettent à Tribu-Terre de porter à de plus grandes échelles la voix des étudiants en
+                    Sciences et Santé d’Orléans, et à bénéficier d’un solide réseau de compétences associatives pour assurer
+                    sa pérennité.
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-2"></div>
