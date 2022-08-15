@@ -19,8 +19,9 @@
         <div class="home-block">
             <img
                     class="ombre"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo de l'équipe"
+                    loading="lazy"
             >
             <div>
                 <h2>Pour tous</h2>
@@ -43,8 +44,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo d'un conseil de gestion ou photo de la faculté"
+                    loading="lazy"
             >
             <div>
                 <h2>Défense des droits des étudiants</h2>
@@ -64,8 +66,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo d'une conférence ou du journal"
+                    loading="lazy"
             >
             <div>
                 <h2>Culture Scientifique</h2>
@@ -86,8 +89,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo du jardin de permaculture"
+                    loading="lazy"
             >
             <div>
                 <h2>Développement Durable</h2>
@@ -111,8 +115,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo d'une soirée"
+                    loading="lazy"
             >
             <div>
                 <h2>Cohésion</h2>
@@ -135,8 +140,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo de la soirée parrainage"
+                    loading="lazy"
             >
             <div>
                 <h2>Parrainage</h2>
@@ -156,8 +162,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo du ski"
+                    loading="lazy"
             >
             <div>
                 <h2>Projets d’envergure</h2>
@@ -178,8 +185,9 @@
         <div class="home-block">
             <img
                     class="ombre home-image"
-                    src="/resources/png/unnamed.png"
+                    src="/resources/webp/unnamed.webp"
                     alt="Photo d'un CA de la FNEB"
+                    loading="lazy"
             >
             <div>
                 <h2>Tissu associatif</h2>
