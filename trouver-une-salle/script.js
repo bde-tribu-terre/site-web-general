@@ -40,24 +40,6 @@ function verifNonVide(input) {
     );
 }
 
-function verifMdpIdentique(input) {
-    surligne(
-        input,
-        input.value === '' || input.value !== document.getElementById(input.id.replace('_verif', '')).value
-    );
-}
-
-function verifNonMoins1(input) {
-    surligne(
-        input,
-        input.value === '-1'
-    );
-}
-
-function garderMinuscules(input) {
-    input.value = input.value.toLowerCase();
-}
-
 function garderMoins(input, nb) {
     if (input.value.length > nb) {
         input.value = input.value.substr(0, nb);
