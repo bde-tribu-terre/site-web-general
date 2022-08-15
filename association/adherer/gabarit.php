@@ -8,9 +8,6 @@
                 Adhérer à Tribu-Terre, c'est payer 5€ pour l’année Universitaire pour bénéficier d’une multitude
                 d’avantages !
             </p>
-        </div>
-        <blockquote>5,00 €</blockquote>
-        <div class="bloc-paragraphes">
             <p>
                 Une fois adhérent, vous obtiendrez une carte d’adhérent, nominative, qui atteste votre adhésion. C'est
                 sur présentation de cette dernière que vous pourrez profiter des avantages.

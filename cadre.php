@@ -46,11 +46,11 @@
     <?php endforeach; endif; ?>
 
     <!-- Fonctions Javascript -->
-    <script src="/script.min.js"></script>
+    <script src="script.min.js"></script>
 
     <!-- Scripts du gabarit -->
     <?php if (defined("SCRIPTS")): foreach (SCRIPTS as $script): ?>
-        <link rel="stylesheet" type="text/css" href="<?= $script ?>">
+        <script src="<?= $script ?>"></script>
     <?php endforeach; endif; ?>
 </head>
 <body>
