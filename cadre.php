@@ -88,11 +88,6 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/' ? ' active' : ''; ?>" href="/association/">
-                            Tribu-Terre
-                        </a>
-                    </li>
-                    <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/adherer/' ? ' active' : ''; ?>" href="/association/adherer/">
                             Adhérer
                         </a>
@@ -102,11 +97,18 @@
                             Fédérations
                         </a>
                     </li>
+                    <li role="separator" class="divider"></li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
                             Statuts
                         </a>
                     </li>
+                    <li>
+                        <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/historique/' ? ' active' : ''; ?>" href="/association/historique/">
+                            Historique
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/contact/' ? ' active' : ''; ?>" href="/association/contact/">
                             Contact
