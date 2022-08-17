@@ -84,28 +84,33 @@
                 <ul class="dropdown-menu">
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/adherer/' ? ' active' : ''; ?>" href="/association/adherer/">
+                            <i class="bi bi-heart-fill" style="font-size: larger"></i>
                             Adhérer
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/federations/' ? ' active' : ''; ?>" href="/association/federations/">
+                            <i class="bi bi-bank2" style="font-size: larger"></i>
                             Fédérations
                         </a>
                     </li>
                     <li role="separator" class="divider"></li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
+                            <i class="bi bi-file-earmark-text-fill" style="font-size: larger"></i>
                             Statuts
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/historique/' ? ' active' : ''; ?>" href="/association/historique/">
+                            <i class="bi bi-award-fill" style="font-size: larger"></i>
                             Historique
                         </a>
                     </li>
                     <li role="separator" class="divider"></li>
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/contact/' ? ' active' : ''; ?>" href="/association/contact/">
+                            <i class="bi bi-envelope-fill" style="font-size: larger"></i>
                             Contact
                         </a>
                     </li>
