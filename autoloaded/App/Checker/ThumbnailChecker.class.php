@@ -28,7 +28,7 @@ class ThumbnailChecker {
         $thumbnailDirectory = $this->pathToLocation . "thumbnails/";
 
         // Si ledit dossier n'existe pas, le créer.
-        if (!file_exists($thumbnailDirectory) || is_dir($thumbnailDirectory)) {
+        if (!file_exists($thumbnailDirectory) || !is_dir($thumbnailDirectory)) {
             mkdir($thumbnailDirectory);
         }
 
