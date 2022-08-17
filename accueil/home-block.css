@@ -5,7 +5,7 @@
 .home-block > img {
     border-radius: 100%;
     flex: 0 1 auto;
-    width: 30%;
+    width: 200px;
     max-width: 200px;
     height: fit-content;
 }
@@ -57,7 +57,7 @@
 
     .home-block > img {
         width: 80%;
-        max-width: 200px;
+        max-width: 300px;
         margin: 15px auto 20px auto;
     }
 
