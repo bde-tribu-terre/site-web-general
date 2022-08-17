@@ -1,10 +1,4 @@
 <?php
-require ROOT . "../secrets.php";
-require ROOT . "autoloaded/Autoloader.class.php";
-
-use App\Checker\SitemapChecker;
-use App\Checker\ThumbnailChecker;
-
 ########################################################################################################################
 # Vérification du protocole (les deux fonctionnent, mais on veut forcer le passage par HTTPS)                           #
 ########################################################################################################################
@@ -12,6 +6,16 @@ if ($_SERVER["HTTPS"] != "on") {
     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
     exit();
 }
+
+########################################################################################################################
+# Chargement des variables d'environnement                                                                             #
+########################################################################################################################
+require ROOT . "../secrets.php";
+
+########################################################################################################################
+# Chargement de l'autoloader                                                                                           #
+########################################################################################################################
+require ROOT . "autoloaded/Autoloader.class.php";
 
 ########################################################################################################################
 # Initialisation des tableaux globaux                                                                                  #
@@ -59,8 +63,8 @@ function ajouterMessage($code, $texte): void {
 ########################################################################################################################
 # Activation des checkers                                                                                              #
 ########################################################################################################################
-SitemapChecker::new(ROOT)->check();
-ThumbnailChecker::new(ROOT . "journaux/")->check();
+App\Checker\SitemapChecker::new(ROOT)->check();
+App\Checker\ThumbnailChecker::new(ROOT . "journaux/")->check();
 
 ########################################################################################################################
 # Version du site                                                                                                      #
