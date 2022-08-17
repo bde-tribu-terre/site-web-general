@@ -4,16 +4,17 @@
     <?php if ($journal->count % 3 == 0): ?><div class="row"><?php endif ?>
         <div class="col-sm-4">
             <div class="well">
-                <div class="row">
+                <div class="pdf-viewer">
                     <h2><?= $journal->titre ?></h2>
-                </div>
-                <div class="row">
-                    <img class="miniature" src="<?= "thumbnails/$journal->pdf.webp" ?>" alt="miniatureJournal">
-                </div>
-                <div class="row">
-                    <a href="<?= $journal->pdf ?>" class="btn btn-var btn-block" style="position: relative; z-index: 1;">
-                        <span class="alterneur-grand-tres-petit"><img src="/resources/svg/imgPdf.svg" height="28" alt="(PDF)">&emsp;Lire en ligne</span>
-                        <span class="alterneur-petit">Lire</span>
+                    <img src="<?= "thumbnails/$journal->pdf.webp" ?>" alt="Miniature du journal <?= $journal->titre ?>">
+                    <a href="<?= $journal->pdf ?>" class="btn btn-var btn-block">
+                        <span>
+                            <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                            &emsp;Lire en ligne
+                        </span>
+                        <span>
+                            Lire
+                        </span>
                     </a>
                 </div>
             </div>

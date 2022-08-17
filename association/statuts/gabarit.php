@@ -19,22 +19,40 @@
                 Ces documents sont transmis à la préfecture du Loiret pour permettre à Tribu-Terre de disposer d’une
                 identité juridique, permettant de réaliser des actions au nom de l’association.
             </p>
-            <p>
-                [Voir l’historique des statuts et du RI (lecture dans un dossier)]
-            </p>
         </div>
     </div>
     <div class="col-sm-2"></div>
 </div>
 <div class="row">
-    <div class="col-sm-6">
-        <p>
-            [STATUTS]
-        </p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+        <div class="pdf-viewer">
+            <h2>Statuts</h2>
+            <img src="/journaux/thumbnails/OmniSciencesn1-1598106530.pdf.webp" alt="Miniature des statuts">
+            <a href="Statuts-2021-03-29.pdf" class="btn btn-var btn-block">
+                <span>
+                    <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                    &emsp;Lire en ligne
+                </span>
+                <span>
+                    Lire
+                </span>
+            </a>
+        </div>
     </div>
-    <div class="col-sm-6">
-        <p>
-            [RI]
-        </p>
+    <div class="col-sm-4">
+        <div class="pdf-viewer">
+            <h2>Règlement intérieur</h2>
+            <img src="/journaux/thumbnails/OmniSciencesn1-1598106530.pdf.webp" alt="Miniature des statuts">
+            <a href="RI-2021-04-11.pdf" class="btn btn-var btn-block">
+                <span>
+                    <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                    &emsp;Lire en ligne
+                </span>
+                <span>
+                    Lire
+                </span>
+            </a>
     </div>
+    <div class="col-sm-2"></div>
 </div>

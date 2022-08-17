@@ -22,5 +22,5 @@ EOF
 // Appel du cadre
 const TITLE = 'Journaux';
 const GABARIT = 'gabarit.php';
-const STYLES = ["style.min.css"];
+const STYLES = ["pdf-viewer.min.css"];
 require ROOT . 'cadre.php';
