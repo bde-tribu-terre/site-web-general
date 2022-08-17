@@ -28,14 +28,14 @@
     <div class="col-sm-4">
         <div class="pdf-viewer">
             <h2>Statuts</h2>
-            <img src="/journaux/thumbnails/OmniSciencesn1-1598106530.pdf.webp" alt="Miniature des statuts">
+            <img src="statutsMiniature.webp" alt="Miniature des statuts">
             <a href="Statuts-2021-03-29.pdf" class="btn btn-var btn-block">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
-                    &emsp;Lire en ligne
+                    &emsp;Consulter en ligne
                 </span>
                 <span>
-                    Lire
+                    Consulter
                 </span>
             </a>
         </div>
@@ -43,14 +43,14 @@
     <div class="col-sm-4">
         <div class="pdf-viewer">
             <h2>Règlement intérieur</h2>
-            <img src="/journaux/thumbnails/OmniSciencesn1-1598106530.pdf.webp" alt="Miniature des statuts">
+            <img src="RIMiniature.webp" alt="Miniature des statuts">
             <a href="RI-2021-04-11.pdf" class="btn btn-var btn-block">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
-                    &emsp;Lire en ligne
+                    &emsp;Consulter en ligne
                 </span>
                 <span>
-                    Lire
+                    Consulter
                 </span>
             </a>
     </div>

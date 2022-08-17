@@ -6,7 +6,7 @@
     object-position: 100% 0;
     position: relative;
     top: 40px;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     box-shadow: 0 0 5px 0 #656565;
     padding: 5px;
     background-color: white;
