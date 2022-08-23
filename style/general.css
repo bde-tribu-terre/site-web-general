@@ -1,18 +1,12 @@
-.arrondi { /* Classe pour arrondir les bords */
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.arrondi-mini { /* Petite classe du même effet en plus petit */
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-img { /* Taille des images */
+img { /* Toutes les images */
     width: 100%;
+    -moz-box-shadow: 0 0 5px 0 #656565;
+    -webkit-box-shadow: 0 0 5px 0 #656565;
+    -o-box-shadow: 0 0 5px 0 #656565;
+    box-shadow: 0 0 5px 0 #656565;
 }
 
-.well, .ombre { /* Ombre des wells, possible sans well */
+.well { /* Ombre des wells, possible sans well */
     -moz-box-shadow: 0 0 5px 0 #656565;
     -webkit-box-shadow: 0 0 5px 0 #656565;
     -o-box-shadow: 0 0 5px 0 #656565;
