@@ -1,0 +1,11 @@
+.head-image {
+    max-width: 300px;
+    border-radius: 100%;
+}
+
+.third-image {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 20px 0;
+}
