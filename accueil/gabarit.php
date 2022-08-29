@@ -42,8 +42,8 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/unnamed.webp"
-                    alt="Photo d'un conseil de gestion ou photo de la faculté"
+                    src="/resources/webp/conseilGestion.webp"
+                    alt="Photo d'un conseil de gestion"
                     loading="lazy"
             >
             <div>
@@ -86,7 +86,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/unnamed.webp"
+                    src="/resources/webp/jardin.webp"
                     alt="Photo du jardin de permaculture"
                     loading="lazy"
             >
@@ -135,8 +135,8 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/unnamed.webp"
-                    alt="Photo de la soirée parrainage"
+                    src="/resources/webp/parrainEtFillote.webp"
+                    alt="Photo d'un parrain et de sa fillote"
                     loading="lazy"
             >
             <div>
