@@ -11,7 +11,8 @@ class Log {
     // Méthode statique
     public static function log(string $message): void {
         try {
-            SqlRequest::new(Log::$script)->execute(["[DEV]$message"]);
+            $repertory = explode(DIRECTORY_SEPARATOR, realpath(ROOT));
+            SqlRequest::new(Log::$script)->execute(["[" . strtoupper(end($repertory)) . "]$message"]);
         } catch (Exception $exception) {
             ajouterMessage(600, $exception);
         }
