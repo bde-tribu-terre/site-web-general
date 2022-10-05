@@ -19,7 +19,7 @@ class TransloaditRequest {
     private array $files;
     private string $assemblyId;
 
-    // Apply all passed attributes to the instance
+    // Constructeur
     private function __construct(array $files) {
         $this->files = $files;
     }

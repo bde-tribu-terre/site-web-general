@@ -164,7 +164,7 @@
 </nav>
 
 <main>
-    <?php if (!empty($GLOBALS['messages'])): ?>
+    <?php if (App\Message::empty()): ?>
         <section class="container" role="alert">
             <h1>Message(s)</h1>
             <hr>
@@ -173,8 +173,8 @@
                 <div class="col-sm-6">
                     <div class="well">
                         <ul class="text-left">
-                            <?php foreach ($GLOBALS['messages'] as $arrMessage): ?>
-                                <li><?= $arrMessage[0] ?> : <?= $arrMessage[1] ?></li>
+                            <?php foreach (App\Message::get() as $message): ?>
+                                <li><?= $message ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>

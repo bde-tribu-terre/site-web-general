@@ -14,7 +14,7 @@ class Log {
             $repertory = explode(DIRECTORY_SEPARATOR, realpath(ROOT));
             SqlRequest::new(Log::$script)->execute(["[" . strtoupper(end($repertory)) . "]$message"]);
         } catch (Exception $exception) {
-            ajouterMessage(600, $exception);
+            Message::add($exception);
         }
     }
 }
