@@ -164,7 +164,7 @@
 </nav>
 
 <main>
-    <?php if (App\Message::empty()): ?>
+    <?php if (!App\Message::empty()): ?>
         <section class="container" role="alert">
             <h1>Message(s)</h1>
             <hr>

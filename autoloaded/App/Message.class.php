@@ -16,6 +16,6 @@ class Message {
     }
 
     public static function empty(): bool {
-        return count(self::$messages) == 0;
+        return empty(self::$messages);
     }
 }
