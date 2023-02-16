@@ -1,6 +1,7 @@
 <?php
 namespace App\Request;
 
+use App\Message;
 use Exception;
 use PDO;
 
@@ -25,7 +26,7 @@ class SqlRequest {
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo->query('SET NAMES UTF8MB4'); // UTF8mb4 : Pour pouvoir encoder des émojis
         } catch (Exception $exception) {
-            ajouterMessage(600, $exception->getMessage());
+            Message::add($exception->getMessage());
         }
         $this->sqlScript = $sqlScript;
     }
@@ -52,7 +53,7 @@ class SqlRequest {
                 $results[] = (object) $item;
             }
         } catch (Exception $exception) {
-            ajouterMessage(600, $exception->getMessage());
+            Message::add($exception->getMessage());
             $results = array();
         } finally {
             $prepare->closeCursor();

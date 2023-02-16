@@ -4,5 +4,5 @@ require ROOT . 'controleur.php';
 
 const TITLE = 'Contact';
 const GABARIT = 'gabarit.php';
-const SCRIPTS = ["scripts.min.js"];
+const SCRIPTS = ["script.min.js"];
 require ROOT . 'cadre.php';
