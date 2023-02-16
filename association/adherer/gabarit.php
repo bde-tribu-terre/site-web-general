@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-3">
-        <img class="head-image" src="/resources/webp/imgCarteAdherent.webp" alt="Photo d'une carte d'adhérent" loading="lazy">
+        <img class="head-image" src="/resources/jpg/imgCarteAdherent.jpg" alt="Photo d'une carte d'adhérent" loading="lazy">
     </div>
     <div class="col-sm-5">
         <div class="bloc-paragraphes">
@@ -22,7 +22,7 @@
 <div class="row">
     <div class="col-sm-4">
         <h2>Événements</h2>
-        <img class="third-image" src="/resources/webp/soireeMarsAttaque.webp" alt="Photo d'une soirée Tribu-Terre" loading="lazy">
+        <img class="third-image" src="/resources/jpg/soireeMarsAttaque.jpg" alt="Photo d'une soirée Tribu-Terre" loading="lazy">
         <div class="bloc-paragraphes">
             <p>
                 Selon la nature de l’événement, plusieurs avantages peuvent s’appliquer.
@@ -39,7 +39,7 @@
     </div>
     <div class="col-sm-4">
         <h2>Partenaires</h2>
-        <img class="third-image" src="/resources/webp/bowling.webp" alt="Photo d'un bowling" loading="lazy">
+        <img class="third-image" src="/resources/jpg/bowling.jpg" alt="Photo d'un bowling" loading="lazy">
         <div class="bloc-paragraphes">
             <p>
                 Tribu-Terre négocie chaque année des partenariats avec divers types d’acteurs. Que ce soit des tarifs
@@ -54,7 +54,7 @@
     </div>
     <div class="col-sm-4">
         <h2>Goodies</h2>
-        <img class="third-image" src="/resources/webp/pulls.webp" alt="Photo des pulls Tribu-Terre" loading="lazy">
+        <img class="third-image" src="/resources/jpg/pulls.jpg" alt="Photo des pulls Tribu-Terre" loading="lazy">
         <div class="bloc-paragraphes">
             <p>
                 Pour tous les goodies vendus par Tribu-Terre, un tarif préférentiel est proposé aux adhérents de

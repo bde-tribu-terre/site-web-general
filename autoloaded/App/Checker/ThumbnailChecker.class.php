@@ -38,7 +38,7 @@ class ThumbnailChecker {
         // Pour chaque fichier dans le dossier des PDF...
         foreach (scandir($this->pathToLocation) as $file) {
             // Si le fichier se termine par .pdf et que le fichier de miniature n'existe pas déjà.
-            if (str_ends_with($file, ".pdf") && !file_exists($thumbnailDirectory . $file . ".webp")) {
+            if (str_ends_with($file, ".pdf") && !file_exists($thumbnailDirectory . $file . ".jpg")) {
 
                 // Ajout des fichiers dans le tableau.
                 $missThnPdfFiles[] = $file;
@@ -54,7 +54,7 @@ class ThumbnailChecker {
             foreach ($transloaditResults as $index => $transloaditResult) {
 
                 $success = file_put_contents(
-                    $thumbnailDirectory . $missThnPdfFiles[$index] . ".webp",
+                    $thumbnailDirectory . $missThnPdfFiles[$index] . ".jpg",
                     file_get_contents($transloaditResult)
                 );
 

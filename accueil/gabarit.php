@@ -18,7 +18,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/unnamed.webp"
+                    src="/resources/jpg/unnamed.jpg"
                     alt="Photo de l'équipe"
                     loading="lazy"
             >
@@ -42,7 +42,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/conseilGestion.webp"
+                    src="/resources/jpg/conseilGestion.jpg"
                     alt="Photo d'un conseil de gestion"
                     loading="lazy"
             >
@@ -64,7 +64,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/conferenceHypnose.webp"
+                    src="/resources/jpg/conferenceHypnose.jpg"
                     alt="Photo d'une conférence Tribu-Terre"
                     loading="lazy"
             >
@@ -86,7 +86,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/jardin.webp"
+                    src="/resources/jpg/jardin.jpg"
                     alt="Photo du jardin de permaculture"
                     loading="lazy"
             >
@@ -110,7 +110,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/soireeTribuTerre.webp"
+                    src="/resources/jpg/soireeTribuTerre.jpg"
                     alt="Photo d'une soirée Tribu-Terre"
                     loading="lazy"
             >
@@ -135,7 +135,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/parrainEtFillote.webp"
+                    src="/resources/jpg/parrainEtFillote.jpg"
                     alt="Photo d'un parrain et de sa fillote"
                     loading="lazy"
             >
@@ -157,7 +157,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/weekEndSki.webp"
+                    src="/resources/jpg/weekEndSki.jpg"
                     alt="Photo du week-end ski"
                     loading="lazy"
             >
@@ -179,7 +179,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/webp/unnamed.webp"
+                    src="/resources/jpg/unnamed.jpg"
                     alt="Photo d'un CA de la FNEB"
                     loading="lazy"
             >

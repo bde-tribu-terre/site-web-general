@@ -8,7 +8,7 @@
                 Historique rapide de Tribu-Terre.
             </p>
         </div>
-        <img class="arrondi ombre" src="/resources/webp/teamVioletteAgo.webp" alt="Photo des membre à l'Assemblée Générale d'avril 2022">
+        <img class="arrondi ombre" src="/resources/jpg/teamVioletteAgo.jpg" alt="Photo des membre à l'Assemblée Générale d'avril 2022">
     </div>
     <div class="col-sm-2"></div>
 </div>

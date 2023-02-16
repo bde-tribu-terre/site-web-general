@@ -52,7 +52,7 @@
 <header role="banner" style="background-image: url('/resources/webp/fondJumbotron.webp');">
     <a href="/">
         <img
-                src="/resources/webp/imgLogoMini.webp"
+                src="/resources/png/imgLogoMini.png"
                 alt="Logo de Tribu-Terre"
                 <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="width: 300px"' : ''; ?>
         >
