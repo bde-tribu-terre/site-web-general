@@ -16,6 +16,10 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    font-size: 1.2em;
+}
+
 .pc { /* Petites capitales */
     font-variant: small-caps;
 }
