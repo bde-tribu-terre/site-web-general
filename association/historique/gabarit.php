@@ -25,8 +25,9 @@
         <hr>
         <h2>2020 - 2021</h2>
         <h3><i>Présidence de Simon <span class="pc">Medelli</span></i></h3>
-        <div class="histo-logo">
-            <img src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre">
+        <div class="histo-compo">
+            <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2020-2021">
+            <img class="histo-compo-fg" style="top: 18%;" src="/resources/jpg/mandat20202021.jpg" alt="Photo mandat 2020-2021">
         </div>
         <hr>
         <h2>2019 - 2020</h2>
