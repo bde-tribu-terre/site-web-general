@@ -2,27 +2,9 @@
 const ROOT = './';
 require ROOT . 'controleur.php';
 
-use App\Request\SqlRequest;
-
-// Récupération des journaux
-$journaux = SqlRequest::new(<<< EOF
-SELECT
-    idJournal AS id,
-    titreJournal AS titre,
-    dateJournal AS date,
-    pdfJournal AS pdf
-FROM
-    website_journaux
-ORDER BY
-    dateJournal
-    DESC
-LIMIT 3;
-EOF
-)->execute();
-
 // Appel du cadre
 const TITLE = 'Accueil';
 const GABARIT = "accueil/gabarit.php";
-const STYLES = ["accueil/home-block.css"];
+const STYLES = ["accueil/home-block.min.css"];
 const SCRIPTS = ["accueil/home-block.js"];
 require ROOT . 'cadre.php';
