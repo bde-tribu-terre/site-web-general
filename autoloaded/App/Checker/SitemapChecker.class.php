@@ -32,11 +32,11 @@ class SitemapChecker {
                 if ($wertice == "index.php") {
                     // Simplification de l'URI.
                     $r = array();
-                    foreach (explode("/", $vertice . $wertice) as $p) {
+                    foreach (explode("/", $vertice) as $p) {
                         if ($p == "..") array_pop($r);
                         elseif ($p != '.' && strlen($p)) $r[] = $p;
                     }
-                    $uriList[] =  ($vertice[0] == "/" ? "/" : "") . implode("/", $r);
+                    $uriList[] =  ($vertice[0] == "/" ? "/" : "") . implode("/", $r) . "/";
                 } elseif (is_dir($vertice . $wertice . "/")) {
                     $stack[] = $vertice . $wertice . "/";
                 }
