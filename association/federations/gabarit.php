@@ -46,7 +46,21 @@
         <h2>FNEB</h2>
         <div class="bloc-paragraphes bg-logo-frame">
             <p>
-                Texte FNEB
+                La FNEB est la Fédération Nationale des Étudiants en Sciences exactes, Naturelles et Techniques.
+            </p>
+            <p>
+                Elle fédère une quinzaine d’associations d’étudiants en sciences, qu’elle représente au niveau national
+                d’une voix unique. Grâce à ses étroites relations avec diverses institutions comme la CDUS, la DGESIP ou
+                encore UNISCIEL, elle fait valoir la voix des étudiants auprès des institutions, ainsi que des acteurs
+                de l’Enseignement Supérieur de la Recherche et des organismes d’état.
+            </p>
+            <p>
+                Ses objectifs comprennent également la promotion des formations en sciences, l’information des étudiants
+                sur l’actualité universitaire, promouvoir les liens entre les étudiants et promouvoir et diffuser la
+                culture ainsi que l’actualité scientifique après des étudiants scientifiques.
+            </p>
+            <p>
+                Cette fédération est indépendante, apolitique, asyndicaliste et aconfessionnelle.
             </p>
             <img class="bg-logo-img" src="/resources/svg/vectorielFNEB.svg" alt="Logo de la FNEB">
         </div>
