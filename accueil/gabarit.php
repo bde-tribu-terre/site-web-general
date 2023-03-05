@@ -165,9 +165,9 @@
                 <h2>Projets d’envergure</h2>
                 <p>
                     Des projets de grande envergure sont organisés pour permettre aux étudiants de vivre des moments
-                    forts qui, bien souvent, leur sont impossibles d’organiser par eux-mêmes. Week-end de ski, gala
-                    étudiant, … sont autant d’événements que Tribu-Terre prépare avec soin chaque année, avec comme
-                    objectif un résultat des plus grandioses.
+                    forts qui, bien souvent, leur sont impossibles d’organiser par eux-mêmes. Week-end de ski, voyages à
+                    l'étranger, gala étudiant, … sont autant d’événements que Tribu-Terre prépare avec soin chaque
+                    année, avec comme objectif un résultat des plus grandioses.
                 </p>
             </div>
         </div>
