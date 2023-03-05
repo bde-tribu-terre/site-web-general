@@ -179,8 +179,8 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/jpg/unnamed.jpg"
-                    alt="Photo d'un CA de la FNEB"
+                    src="/resources/jpg/groupe106FNEBcropped.jpg"
+                    alt="Photo de groupe du 106ème congrès de la FNEB"
                     loading="lazy"
             >
             <div>
