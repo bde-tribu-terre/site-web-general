@@ -49,7 +49,7 @@
     <?php endforeach; endif; ?>
 </head>
 <body>
-<header role="banner" style="background-image: url('/resources/webp/fondJumbotron.webp');">
+<header role="banner" style="background-image: url('/resources/jpg/fondJumbotron.jpg');">
     <a href="/">
         <img
                 src="/resources/png/imgLogoMini.png"
