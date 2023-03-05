@@ -11,8 +11,14 @@
                 territoire orléanais.
             </p>
         </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
         <h2>ÔCampus</h2>
-        <div class="bloc-paragraphes">
+        <div class="bloc-paragraphes bg-logo-frame">
             <p>
                 ÔCampus est la fédération des associations étudiantes de l’Université d’Orléans et des autres
                 établissements d’enseignement supérieur de la Métropole d’Orléans.
@@ -29,12 +35,20 @@
                 Elle s’interdit toute prise de position partisane ou syndicale, et s’interdit également toute ingérence
                 dans la gestion interne de ses associations membres, qui restent souveraines.
             </p>
+            <img class="bg-logo-img" src="/resources/svg/vectorielOCampus.svg" alt="Logo d'ÔCampus">
         </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
         <h2>FNEB</h2>
-        <div class="bloc-paragraphes">
+        <div class="bloc-paragraphes bg-logo-frame">
             <p>
                 Texte FNEB
             </p>
+            <img class="bg-logo-img" src="/resources/svg/vectorielFNEB.svg" alt="Logo de la FNEB">
         </div>
     </div>
     <div class="col-sm-2"></div>

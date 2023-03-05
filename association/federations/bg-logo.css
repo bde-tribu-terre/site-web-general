@@ -1,0 +1,17 @@
+.bg-logo-frame > .bg-logo-img {
+    width: auto;
+    max-width: 80%;
+    height: 80%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    box-shadow: none;
+
+    z-index: -1;
+    opacity: 10%;
+}
