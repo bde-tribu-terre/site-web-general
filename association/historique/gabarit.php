@@ -5,7 +5,36 @@
     <div class="col-sm-8">
         <div class="bloc-paragraphes">
             <p>
-                Historique rapide de Tribu-Terre.
+                Tribu-Terre est une association régie par la loi du 1<sup>er</sup> juillet 1901 fondée en 2003 par des
+                enseignants de géologie à l'OSUC (Observatoire des Sciences de l'Univers en Région Centre-Val de Loire)
+                afin d'organiser des sorties terrain de géologie, des annales d'examen de sciences de la Terre, des
+                exposés thématiques... L'association est rapidement reprise par des étudiants. Elle obtient une salle de
+                repos pour les étudiants de l'OSUC qui deviendra très vite le local de l'association.
+            </p>
+            <p>
+                Au cours de l'année 2014, Tribu-Terre se rapproche de la FNEB, Fédération Nationale des étudiants en
+                Sciences Exactes, Naturelles et Techniques, dans le but d'étendre son réseau en France. Elle devient
+                officiellement membre à part entière de la fédération le 13 juin 2015.
+            </p>
+            <p>
+                Le 16 octobre 2017, Tribu-Terre s'associe avec 20 associations étudiantes orléanaises pour fonder
+                ÔCampus, fédération des associations étudiantes d'Orléans.
+            </p>
+            <p>
+                En 2018, l'association s'ouvre à toutes les filières scientifiques de l'Université d'Orléans, plus
+                précisément à toutes les Licences et tous les Masters de l'OSUC et de l'UFR Sciences et Techniques. En
+                une année seulement, les biologistes, qui ont désormais le droit d'intégrer le Bureau, se retrouvent en
+                majorité.
+            </p>
+            <p>
+                Pendant les années qui suivent, toutes les filières scientifiques se font représenter au sein de
+                l'équipe : géologie, biologie, chimie, physique, mathématiques, informatique, SVT, LAS…
+            </p>
+            <p>
+                À la rentrée 2021, l'Université d'Orléans accueille pour la première fois des étudiants en PASS,
+                initiant le projet d'ouverture d'une faculté de médecine. À ce titre, Tribu-Terre représente depuis lors
+                les étudiants en PASS et en année supérieure de médecine, qui sont rattachés à l'UFR Sciences et
+                Techniques, au sein des conseils Universitaires.
             </p>
         </div>
         <hr>
