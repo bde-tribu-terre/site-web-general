@@ -31,7 +31,7 @@
                 l'équipe : géologie, biologie, chimie, physique, mathématiques, informatique, SVT, LAS…
             </p>
             <p>
-                À la rentrée 2021, l'Université d'Orléans accueille pour la première fois des étudiants en PASS,
+                À la rentrée 2022, l'Université d'Orléans accueille pour la première fois des étudiants en PASS,
                 initiant le projet d'ouverture d'une faculté de médecine. À ce titre, Tribu-Terre représente depuis lors
                 les étudiants en PASS et en année supérieure de médecine, qui sont rattachés à l'UFR Sciences et
                 Techniques, au sein des conseils Universitaires.
