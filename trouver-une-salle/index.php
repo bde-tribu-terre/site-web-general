@@ -1,71 +1,31 @@
-<?php // TODO: Fix trouveur de salles
-const ROOT = '../';
-require ROOT . 'controleur.php';
-if (isset($_GET['nom'])) {
-    try {
-        if (
-            !empty($_GET['nom'])
-        ) {
-            // Recherche des salles
-            MdlRechercherSalle($_GET['nom']);
+<?php
+const ROOT = "../";
+require ROOT . "controleur.php";
 
-            // S'il y a des résultats...
-            if ($GLOBALS['retoursModele']['salles']) {
-                define('NOMBRE', count($GLOBALS['retoursModele']['salles']));
+use App\Request\ApiSallesRequest;
 
-                if (NOMBRE > 1) {
-                    $listeSalles = '';
-                    foreach ($GLOBALS['retoursModele']['salles'] as $salle) {
-                        $listeSalles .=
-                            '
-                            <div class="well">
-                                <h4>' . $salle['nom'] . '</h4>
-                                <p>Composante : ' . $salle['titreComposante'] . '</p>
-                                <p>Bâtiment : ' . $salle['nomBatiment'] . '</p>
-                                <p>Emplacement : ' . $salle['nomGroupe'] . '</p>
-                                <p>
-                                    <a
-                                        href="/trouver-une-salle/?nom=' . preg_replace('/ /', '+', $salle['nom']) . '"
-                                    >
-                                        Voir le bâtiment sur le plan
-                                    </a>
-                                </p>
-                            </div>
-                            ';
-                    }
-                } else {
-                    $listeSalles =
-                        '
-                        <div class="well">
-                            <h4>' . $GLOBALS['retoursModele']['salles'][0]['nom'] . '</h4>
-                            <p>Composante : ' . $GLOBALS['retoursModele']['salles'][0]['titreComposante'] . '</p>
-                            <p>Bâtiment : ' . $GLOBALS['retoursModele']['salles'][0]['nomBatiment'] . '</p>
-                            <p>Emplacement : ' . $GLOBALS['retoursModele']['salles'][0]['nomGroupe'] . '</p>
-                        </div>
-                        ';
-                }
-                define('SALLES', $listeSalles);
-                define('CODE_COMPOSANTE', $GLOBALS['retoursModele']['salles'][0]['codeComposante']);
-                define('ID_BATIMENT', $GLOBALS['retoursModele']['salles'][0]['idBatiment']);
+// Liste des gabarits
+const GABARIT_BARRE_DE_RECHERCHE = "gabaritBarreDeRecherche.php"; // Défaut
+const GABARIT_AUCUN_RESULTAT = "gabaritAucunResultat.php";
+const GABARIT_CHOIX_DE_SALLE = "gabaritChoixDeSalle.php";
 
-                $gabarit = 'gabaritRecherche.php';
-            }
+// Gabarit par défaut
+$gabarit = GABARIT_BARRE_DE_RECHERCHE;
 
-            // S'il n'y a pas de résultat...
-            else {
-                ajouterMessage(604, 'Aucune salle de nom "' . $_GET['nom'] . '" n\'a été trouvée.');
-            }
-        } else {
-            throw new Exception('Veuillez remplir tous les champs.', 400);
-        }
-    } catch (Exception $e) {
-        ajouterMessage($e->getCode(), $e->getMessage());
-        $gabarit = 'gabarit.php';
+if (isset($_GET["nom"])) {
+    // Récupération des salles
+    $salles = ApiSallesRequest::new()->requestByName(
+        $_GET["nom"]
+    );
+
+    if (empty($salles)) {
+        $gabarit = GABARIT_AUCUN_RESULTAT;
+    } else {
+        $gabarit = GABARIT_CHOIX_DE_SALLE;
     }
-} else {
-    $gabarit = 'gabarit.php';
 }
 
-const TITLE = 'Trouver une salle';
+// Appel du cadre
+const TITLE = "Trouver une salle";
 define("GABARIT", $gabarit);
-require ROOT . 'cadre.php';
+require ROOT . "cadre.php";

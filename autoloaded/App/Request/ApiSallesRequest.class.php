@@ -3,11 +3,11 @@
 namespace App\Request;
 
 use App\Message;
+use Ds\Set;
 
 class ApiSallesRequest {
     // Attributs statiques.
     private const ENDPOINT = "https://api.bde-tribu-terre.fr/v2.0/university";
-    private const PATH = "/room/";
 
     // Constructeur statique.
     public static function new(): ApiSallesRequest {
@@ -21,20 +21,75 @@ class ApiSallesRequest {
     private function __construct() {}
 
     // Méthodes
-    public function execute(string $name): array {
+    public function requestById(int $id): object {
+        return $this->find("/room/", array(
+            "id" => $id
+        ))[0];
+    }
+
+    public function requestByName(string $name): array {
+        // Recherche des salles correspondant au nom
+        $rooms = $this->find("/room/", array(
+            "name" => $name
+        ));
+
+        if (!empty($rooms)) {
+            // Collecte des ID à rechercher ensuite
+            $roomGroupsToFindById = array();
+            $buildingsToFindById = array();
+            $buildingGroupsToFindById = array();
+
+            foreach ($rooms as $room) {
+                if (!in_array($room->room_group_id, $roomGroupsToFindById)) {
+                    $roomGroupsToFindById[] = $room->room_group_id;
+                }
+
+                if (!in_array($room->building_id, $buildingsToFindById)) {
+                    $buildingsToFindById[] = $room->building_id;
+                }
+
+                if (!in_array($room->building_group_id, $buildingGroupsToFindById)) {
+                    $buildingGroupsToFindById[] = $room->building_group_id;
+                }
+            }
+
+            // Recherche des infos via les ID collectés
+            $roomGroupsIdToName = array();
+            $buildingsIdToName = array();
+            $buildingGroupsIdToName = array();
+
+            foreach ($this->find("/roomGroup/", array("id" => implode(",", $roomGroupsToFindById))) as $roomGroup) {
+                $roomGroupsIdToName[$roomGroup->room_group_id] = $roomGroup->name;
+            }
+
+            foreach ($this->find("/building/", array("id" => implode(",", $buildingsToFindById))) as $building) {
+                $buildingsIdToName[$building->building_id] = $building->long_label;
+            }
+
+            foreach ($this->find("/buildingGroup/", array("id" => implode(",", $buildingGroupsToFindById))) as $buildingGroup) {
+                $buildingGroupsIdToName[$buildingGroup->building_group_id] = $buildingGroup->name;
+            }
+
+            // Rajout de toutes les infos aux salles
+            foreach ($rooms as $room) {
+                $room->room_group_name = $roomGroupsIdToName[$room->room_group_id];
+                $room->building_name = $buildingsIdToName[$room->building_id];
+                $room->building_group_name = $buildingGroupsIdToName[$room->building_group_id];
+            }
+        }
+
+        return $rooms;
+    }
+
+    private function find(string $path, array $getFields): array {
         // Initialisation d'un CurlHandle.
         $curlHandle = curl_init();
 
         // Initialisation des options.
         $options = array();
 
-        // Construction des arguments GET.
-        $getFields = array(
-            "name" => $name
-        );
-
         // Construction de l'URL.
-        $url = self::ENDPOINT . self::PATH . '?' . http_build_query($getFields);
+        $url = self::ENDPOINT . $path . '?' . http_build_query($getFields);
 
         // Setting du tableau des options.
         $options[CURLOPT_RETURNTRANSFER] = true;
@@ -76,4 +131,6 @@ class ApiSallesRequest {
 
         return $response->data["data"]["objects"];
     }
+
+
 }
