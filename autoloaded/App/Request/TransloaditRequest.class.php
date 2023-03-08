@@ -107,7 +107,7 @@ class TransloaditRequest {
         return $response;
     }
 
-    public function execute(string $templateId): array {
+    public function executeTemplate(string $templateId): array {
         $response = $this->request($templateId);
 
         $this->assemblyId = explode("/", parse_url($response->data['assembly_ssl_url'])['path'])[2];

@@ -48,7 +48,7 @@ class ThumbnailChecker {
 
         if (!empty($missThnPdfFiles)) {
             // Execution de la requête sur l'API Transloadit.
-            $transloaditResults = TransloaditRequest::new(array_map(fn($file): string => $this->pathToLocation . $file, $missThnPdfFiles))->execute(TransloaditRequest::PDF_THUMBNAIL);
+            $transloaditResults = TransloaditRequest::new(array_map(fn($file): string => $this->pathToLocation . $file, $missThnPdfFiles))->executeTemplate(TransloaditRequest::PDF_THUMBNAIL);
 
             // Pour chaque résultat de requête manquante...
             foreach ($transloaditResults as $index => $transloaditResult) {
