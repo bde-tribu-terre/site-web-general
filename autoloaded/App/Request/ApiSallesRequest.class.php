@@ -3,7 +3,6 @@
 namespace App\Request;
 
 use App\Message;
-use Ds\Set;
 
 class ApiSallesRequest {
     // Attributs statiques.
