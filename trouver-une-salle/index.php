@@ -14,9 +14,7 @@ $gabarit = GABARIT_BARRE_DE_RECHERCHE;
 
 if (isset($_GET["nom"])) {
     // Récupération des salles
-    $salles = ApiSallesRequest::new()->requestByName(
-        $_GET["nom"]
-    );
+    $salles = ApiSallesRequest::new()->requestByName($_GET["nom"]);
 
     if (empty($salles)) {
         $gabarit = GABARIT_AUCUN_RESULTAT;
