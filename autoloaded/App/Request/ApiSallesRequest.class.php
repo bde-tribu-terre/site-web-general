@@ -22,9 +22,17 @@ class ApiSallesRequest {
 
     // Méthodes
     public function requestById(int $id): object {
-        return $this->find("/room/", array(
+        $room = $this->find("/room/", array(
             "id" => $id
         ))[0];
+
+        if (!empty($room)) {
+            $room->room_group_name = $this->find("/roomGroup/", array("id" => $room->room_group_id))[0]->name;
+            $room->building_name = $this->find("/building/", array("id" => $room->building_id))[0]->long_label;
+            $room->building_group_name = $this->find("/buildingGroup/", array("id" => $room->building_group_id))[0]->name;
+        }
+
+        return $room;
     }
 
     public function requestByName(string $name): array {
