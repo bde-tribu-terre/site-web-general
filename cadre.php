@@ -147,7 +147,7 @@
                     Podcasts
                 </a>
             </li>
-            <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/trouver-une-salle/' ? ' active' : ''; ?>">
+            <li class="nav-item<?= str_starts_with($_SERVER["REQUEST_URI"], '/trouver-une-salle/') ? ' active' : ''; ?>">
                 <a class="nav-link" href="/trouver-une-salle/">
                     <i class="bi bi-geo-fill" style="font-size: larger"></i>
                     Trouver une salle
