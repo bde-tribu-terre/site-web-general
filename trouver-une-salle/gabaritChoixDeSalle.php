@@ -4,7 +4,7 @@
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <p>
-            <?= count($salles) ?> salles correspondantes ont été trouvées.
+            <?= count($salles) ?> salle(s) correspondante(s) trouvée(s).
         </p>
         <hr>
     </div>
