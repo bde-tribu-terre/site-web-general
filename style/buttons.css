@@ -1,0 +1,50 @@
+.btn-var {
+    color: var(--sec);
+    background-color: var(--prim);
+    border-color: var(--prim-border);
+}
+
+.btn-var.focus, .btn-var:focus {
+    color: var(--sec);
+    background-color: var(--prim-select);
+    border-color: var(--prim-select-double-border);
+}
+
+.btn-var:hover {
+    color: var(--sec);
+    background-color: var(--prim-select);
+    border-color: var(--prim-select-double);
+}
+
+.btn-var.active, .btn-var:active, .open>.dropdown-toggle.btn-var {
+    color: var(--sec);
+    background-color: var(--prim-select);
+    background-image:none;
+    border-color: var(--prim-select-double);
+}
+
+.btn-var.active.focus, .btn-var.active:focus, .btn-var.active:hover, .btn-var:active.focus,
+.btn-var:active:focus, .btn-var:active:hover, .open>.dropdown-toggle.btn-var.focus,
+.open>.dropdown-toggle.btn-var:focus, .open>.dropdown-toggle.btn-var:hover {
+    color: var(--sec);
+    background-color: var(--prim-select-double);
+    border-color: var(--prim-select-double-border);
+}
+
+.btn-var.disabled.focus, .btn-var.disabled:focus, .btn-var.disabled:hover, .btn-var[disabled].focus,
+.btn-var[disabled]:focus, .btn-var[disabled]:hover, fieldset[disabled] .btn-var.focus,
+fieldset[disabled] .btn-var:focus, fieldset[disabled] .btn-var:hover {
+    background-color: var(--prim);
+    border-color: var(--prim-border);
+}
+
+.btn-var .badge {
+    color: var(--prim);
+    background-color: var(--sec)
+}
+
+a.btn {
+    font-size: large;
+    font-weight: 500;
+    padding: 8px;
+}
