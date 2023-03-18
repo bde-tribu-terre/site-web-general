@@ -6,13 +6,13 @@ use Exception;
 
 class Log {
     // Attribut statique
-    private static string $script = "INSERT INTO general_log (service, message) VALUES (1, ?);";
+    private const SCRIPT = "INSERT INTO general_log (service, message) VALUES (1, ?);";
 
     // Méthode statique
     public static function log(string $message): void {
         try {
             $repertory = explode(DIRECTORY_SEPARATOR, realpath(ROOT));
-            SqlRequest::new(Log::$script)->execute(["[" . strtoupper(end($repertory)) . "]$message"]);
+            SqlRequest::new(Log::SCRIPT)->execute(["[" . strtoupper(end($repertory)) . "]$message"]);
         } catch (Exception $exception) {
             Message::add($exception);
         }
