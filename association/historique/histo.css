@@ -1,23 +1,27 @@
 .histo-logo > img {
     max-width: 33%;
-    box-shadow: none;
 }
 
 .histo-compo {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .histo-compo > .histo-compo-bg {
     position: relative;
     width: 100%;
     box-shadow: none;
+
+    z-index: 0;
 }
 
 .histo-compo > .histo-compo-fg {
     width: 48%;
     height: 48%;
     object-fit: cover;
+
+    z-index: 1;
 
     border-radius: 100%;
 
@@ -41,4 +45,33 @@
     height: 70%;
 
     border-radius: 10px;
+}
+
+.histo-compo > .histo-compo-lu {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    box-shadow: none;
+
+    z-index: -1;
+
+    border-radius: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: rotation 28s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
