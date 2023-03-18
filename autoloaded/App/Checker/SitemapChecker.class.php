@@ -10,8 +10,8 @@ class SitemapChecker {
     // Liste des sitemaps dynamiques qu'il faut mettre à jour.
     // [URI de la sitemap, délai avant MÀJ en secondes, fonction pour récupérer une liste d'URI, arguments de la fonction, préfixe des URI des éléments]
     private const DYNAMIC_SITEMAPS = [
-        ["/sitemap-static.xml", 2592000 /* 30 jours */, "getSitemapUriByIndexSearchFromRoot", [], ""],
-        ["/journaux/sitemap-journaux.xml", 86400 /* 24h */, "getSitemapUriListBySql", ["SELECT pdfJournal AS uri FROM website_journaux"], "/journaux"]
+        ["/sitemap-static.xml", 7776000 /* 90 jours */, "getSitemapUriByIndexSearchFromRoot", [], ""],
+        ["/journaux/sitemap-journaux.xml", 2592000 /* 30 jours */, "getSitemapUriListBySql", ["SELECT pdfJournal AS uri FROM website_journaux"], "/journaux"]
     ];
 
     // Méthodes statiques.
