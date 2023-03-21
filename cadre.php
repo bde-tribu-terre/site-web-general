@@ -35,35 +35,25 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <?php
-        $cadreStyles = [
-            "blockquote",
-            "body-flexbox",
-            "footer",
-            "general",
-            "header",
-            "main",
-            "navbar",
-            "texte",
-            "variables"
-        ]
-    ?>
+    <?php if (file_exists(ROOT . "styles/overall-styles")): ?>
+        <!-- Feuilles de style générales -->
+        <style>
+            <?php foreach (scandir(ROOT . "styles/overall-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+                /* <?= $style ?> */
+                <?= file_get_contents(ROOT . "styles/overall-styles/" . $style) ?>
+            <?php endif; endforeach; ?>
+        </style>
+    <?php endif; ?>
 
-    <!-- Feuilles de style générales -->
-    <style>
-        <?php foreach (scandir(ROOT . "styles/overall-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
-            /* <?= $style ?> */
-            <?= file_get_contents(ROOT . "styles/overall-styles/" . $style) ?>
-        <?php endif; endforeach; ?>
-    </style>
-
-    <!-- Feuilles de style du cadre -->
-    <style>
-        <?php foreach (scandir(ROOT . "styles/frame-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
-            /* <?= $style ?> */
-            <?= file_get_contents(ROOT . "styles/frame-styles/" . $style) ?>
-        <?php endif; endforeach; ?>
-    </style>
+    <?php if (file_exists(ROOT . "styles/frame-styles")): ?>
+        <!-- Feuilles de style du cadre -->
+        <style>
+            <?php foreach (scandir(ROOT . "styles/frame-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+                /* <?= $style ?> */
+                <?= file_get_contents(ROOT . "styles/frame-styles/" . $style) ?>
+            <?php endif; endforeach; ?>
+        </style>
+    <?php endif; ?>
 
     <?php if (defined("STYLES") && !empty(STYLES)): ?>
         <!-- Feuilles de style du gabarit -->
