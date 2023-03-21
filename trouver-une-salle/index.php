@@ -26,4 +26,6 @@ if (isset($_GET["nom"])) {
 // Appel du cadre
 const TITLE = "Trouver une salle";
 define("GABARIT", $gabarit);
+const STYLES = ["buttons"];
+const SCRIPTS = ["formulaire"];
 require ROOT . "cadre.php";

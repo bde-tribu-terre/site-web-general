@@ -6,5 +6,5 @@ require ROOT . 'controleur.php';
 const TITLE = 'Accueil';
 const GABARIT = "accueil/gabarit.php";
 const STYLES = ["blockquote", "home-block"];
-const SCRIPTS = ["accueil/home-block.js"];
+const SCRIPTS = ["home-block"];
 require ROOT . 'cadre.php';

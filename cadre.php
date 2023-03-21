@@ -79,10 +79,39 @@
         </style>
     <?php endif; ?>
 
-    <!-- Scripts du gabarit -->
-    <?php if (defined("SCRIPTS")): foreach (SCRIPTS as $script): ?>
-        <script src="<?= $script ?>"></script>
-    <?php endforeach; endif; ?>
+    <?php if (file_exists(ROOT . "scripts/overall-scripts")): ?>
+        <!-- Scripts généraux -->
+        <script type="application/javascript">
+            <?php foreach (scandir(ROOT . "scripts/overall-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
+                /* <?= $script ?> */
+                <?= file_get_contents(ROOT . "scripts/overall-scripts/" . $script) ?>
+            <?php endif; endforeach; ?>
+        </script>
+    <?php endif; ?>
+
+    <?php if (file_exists(ROOT . "scripts/frame-scripts")): ?>
+        <!-- Scripts du cadre -->
+        <script type="application/javascript">
+            <?php foreach (scandir(ROOT . "scripts/frame-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
+                /* <?= $script ?> */
+                <?= file_get_contents(ROOT . "scripts/frame-scripts/" . $script) ?>
+            <?php endif; endforeach; ?>
+        </script>
+    <?php endif; ?>
+
+    <?php if (defined("SCRIPTS") && !empty(SCRIPTS)): ?>
+        <!-- Scripts du gabarit -->
+        <script type="application/javascript">
+            <?php foreach (SCRIPTS as $script): ?>
+                /* <?= $script . ".min.js" ?> */
+                <?php if (file_exists(ROOT . "scripts/template-scripts/" . $script . ".min.js")): ?>
+                    <?= file_get_contents(ROOT . "scripts/template-scripts/" . $script . ".min.js") ?>
+                <?php else: ?>
+                    /* Impossible de trouver le script de gabarit "<?= $script ?>" */
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </script>
+    <?php endif; ?>
 </head>
 <body>
 <header role="banner" style="background-image: url('/resources/jpg/fondJumbotron.jpg');">
