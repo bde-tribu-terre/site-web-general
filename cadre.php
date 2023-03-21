@@ -105,7 +105,11 @@
 <body>
 <header role="banner" style="background-image: url('/resources/jpg/fondJumbotron.jpg');">
     <a href="/">
-        <img src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre" <?= $_SERVER["REQUEST_URI"] == '/' ? 'styles="width: 300px"' : ''; ?>>
+        <picture>
+            <source srcset="/resources/webp/imgLogoMini.webp" type="image/webp">
+            <source srcset="/resources/png/imgLogoMini.png" type="image/png">
+            <img src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre" <?= $_SERVER["REQUEST_URI"] == "/" ? "width=300" : "" ?>>
+        </picture>
     </a>
     <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' styles="display: revert"' : ''; ?>>
         Association des Étudiants en Sciences et en Santé de l'Université d'Orléans
