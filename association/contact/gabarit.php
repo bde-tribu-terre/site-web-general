@@ -22,7 +22,7 @@
             <hr>
             <div id="generale_div" style="height: 50px; word-wrap: break-word;">
                 <p id="generale_base64">
-                    <strong><?php echo base64_encode('contact@bde-tribu-terre.fr') ?></strong>
+                    <strong><?= base64_encode('contact@bde-tribu-terre.fr') ?></strong>
                 </p>
             </div>
             <button
