@@ -4,5 +4,5 @@ require ROOT . 'controleur.php';
 
 const TITLE = 'Historique';
 const GABARIT = 'gabarit.php';
-const STYLES = ["histo.min.css"];
+const STYLES = ["histo"];
 require ROOT . 'cadre.php';

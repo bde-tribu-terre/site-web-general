@@ -29,9 +29,9 @@
         <div class="pdf-viewer">
             <h2>Statuts</h2>
             <img src="statutsMiniature.jpg" alt="Miniature des statuts">
-            <a href="Statuts-2021-03-29.pdf" class="btn btn-var btn-block">
+            <a href="Statuts-2021-03-29.pdf" class="button">
                 <span>
-                    <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                    <img src="/resources/svg/imgPdf.svg" alt="PDF">
                     &emsp;Consulter en ligne
                 </span>
                 <span>
@@ -44,9 +44,9 @@
         <div class="pdf-viewer">
             <h2>Règlement intérieur</h2>
             <img src="RIMiniature.jpg" alt="Miniature des statuts">
-            <a href="RI-2021-04-11.pdf" class="btn btn-var btn-block">
+            <a href="RI-2021-04-11.pdf" class="button">
                 <span>
-                    <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                    <img src="/resources/svg/imgPdf.svg" alt="PDF">
                     &emsp;Consulter en ligne
                 </span>
                 <span>

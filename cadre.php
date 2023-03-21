@@ -35,13 +35,49 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <!-- Feuilles de style générales -->
-    <link rel="stylesheet" type="text/css" href="/style/compile.php">
+    <?php
+        $cadreStyles = [
+            "blockquote",
+            "body-flexbox",
+            "footer",
+            "general",
+            "header",
+            "main",
+            "navbar",
+            "texte",
+            "variables"
+        ]
+    ?>
 
-    <!-- Feuilles de style du gabarit -->
-    <?php if (defined("STYLES")): foreach (STYLES as $style): ?>
-        <link rel="stylesheet" type="text/css" href="<?= $style ?>">
-    <?php endforeach; endif; ?>
+    <!-- Feuilles de style générales -->
+    <style>
+        <?php foreach (scandir(ROOT . "styles/overall-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+            /* <?= $style ?> */
+            <?= file_get_contents(ROOT . "styles/overall-styles/" . $style) ?>
+        <?php endif; endforeach; ?>
+    </style>
+
+    <!-- Feuilles de style du cadre -->
+    <style>
+        <?php foreach (scandir(ROOT . "styles/frame-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+            /* <?= $style ?> */
+            <?= file_get_contents(ROOT . "styles/frame-styles/" . $style) ?>
+        <?php endif; endforeach; ?>
+    </style>
+
+    <?php if (defined("STYLES") && !empty(STYLES)): ?>
+        <!-- Feuilles de style du gabarit -->
+        <style>
+            <?php foreach (STYLES as $style): ?>
+                /* <?= $style . ".min.css" ?> */
+                <?php if (file_exists(ROOT . "styles/template-styles/" . $style . ".min.css")): ?>
+                    <?= file_get_contents(ROOT . "styles/template-styles/" . $style . ".min.css") ?>
+                <?php else: ?>
+                    /* Impossible de trouver le style de gabarit "<?= $style ?>" */
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </style>
+    <?php endif; ?>
 
     <!-- Scripts du gabarit -->
     <?php if (defined("SCRIPTS")): foreach (SCRIPTS as $script): ?>
@@ -51,13 +87,9 @@
 <body>
 <header role="banner" style="background-image: url('/resources/jpg/fondJumbotron.jpg');">
     <a href="/">
-        <img
-                src="/resources/png/imgLogoMini.png"
-                alt="Logo de Tribu-Terre"
-                <?= $_SERVER["REQUEST_URI"] == '/' ? 'style="width: 300px"' : ''; ?>
-        >
+        <img src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre" <?= $_SERVER["REQUEST_URI"] == '/' ? 'styles="width: 300px"' : ''; ?>>
     </a>
-    <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' style="display: revert"' : ''; ?>>
+    <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' styles="display: revert"' : ''; ?>>
         Association des Étudiants en Sciences et en Santé de l'Université d'Orléans
     </p>
 </header>

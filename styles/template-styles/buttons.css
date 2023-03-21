@@ -1,0 +1,61 @@
+.button {
+    /* Block */
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    background-color: var(--prim);
+    border: 1px solid var(--prim-border);
+
+    /* Text */
+    text-align: center;
+    white-space: nowrap;
+    color: var(--sec);
+    text-decoration: none;
+
+    /* Extra */
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* Block */
+    background-color: var(--prim-select);
+    border-color: var(--prim-select);
+
+    /* Text */
+    color: var(--sec);
+    text-decoration: none;
+}
+
+.button:active {
+    /* Block */
+    background-color: var(--prim-select-double);
+    border-color: var(--prim-select-double);
+
+    /* Text */
+    color: var(--sec);
+    text-decoration: none;
+}
+
+.button:visited {
+    /* Text */
+    color: var(--sec);
+    text-decoration: none;
+}
+
+.button:link {
+    /* Text */
+    color: var(--sec);
+    text-decoration: none;
+}
+
+.button:disabled {
+    /* Block */
+    background-color: var(--prim-select-double);
+    border-color: var(--prim-select-double);
+
+    /* Extra */
+    cursor: default;
+}

@@ -38,7 +38,7 @@
         <hr>
         <p>
             <a
-                    class="btn btn-var btn-block"
+                    class="button"
                     href="/trouver-une-salle/"
             >
                 Rechercher une autre salle

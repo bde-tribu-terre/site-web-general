@@ -28,7 +28,7 @@
                         <p>
                             <?= $salle->room_group_name ?>
                         </p>
-                        <a href="/trouver-une-salle/salle/?id=<?= $salle->room_id ?>" class="btn btn-var btn-block">
+                        <a href="/trouver-une-salle/salle/?id=<?= $salle->room_id ?>" class="button">
                             Plus d'informations
                         </a>
                     </div>
@@ -45,7 +45,7 @@
         <hr>
         <p>
             <a
-                    class="btn btn-var btn-block"
+                    class="button"
                     href="/trouver-une-salle/"
             >
                 Rechercher une autre salle

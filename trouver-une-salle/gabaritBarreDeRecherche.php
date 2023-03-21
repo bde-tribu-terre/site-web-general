@@ -25,7 +25,7 @@
             <p> <!-- Rechercher -->
                 <input
                         type="submit"
-                        class="btn btn-var btn-block"
+                        class="button"
                         value="Lancer la recherche"
                 >
             </p>

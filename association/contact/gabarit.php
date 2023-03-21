@@ -27,7 +27,7 @@
             </div>
             <button
                     id="generale_button"
-                    class="btn btn-var"
+                    class="button"
                     onclick="decoder('generale', 'h4');"
             >
                 Cliquer pour décrypter

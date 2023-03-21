@@ -7,9 +7,9 @@
                 <div class="pdf-viewer">
                     <h2><?= $journal->titre ?></h2>
                     <img src="<?= "thumbnails/$journal->pdf.jpg" ?>" alt="Miniature du journal <?= $journal->titre ?>">
-                    <a href="<?= $journal->pdf ?>" class="btn btn-var btn-block">
+                    <a class="button" href="<?= $journal->pdf ?>">
                         <span>
-                            <img src="/resources/svg/imgPdf.svg" height="28" alt="PDF">
+                            <img src="/resources/svg/imgPdf.svg" alt="PDF">
                             &emsp;Lire en ligne
                         </span>
                         <span>
