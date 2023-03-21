@@ -8,7 +8,7 @@ class TransloaditRequest {
     private const PATH = "/assemblies";
     private const EXPIRES = "+2 hours";
 
-    public const PDF_THUMBNAIL = "fac66967b81b4a04b534c96d23d9aa2b";
+    public const PDF_THUMBNAIL = "58913b786e7b4c79b883b2648b14506d";
 
     // Constructeur statique.
     public static function new(array $files = array()): TransloaditRequest {
@@ -121,21 +121,23 @@ class TransloaditRequest {
     }
 
     private function retrieveResults(array $data): array {
-        $resultsUrls = array();
+        $simplifiedResults = array();
 
-        foreach ($data["results"] as $step => $results) {
-            if ($step == ":output") {
-                foreach ($this->files as $originalFile) {
-                    $originalFileExploded = explode("/", $originalFile);
-                    foreach ($results as $result) {
-                        if ($result["original_name"] == end($originalFileExploded)) {
-                            $resultsUrls[] = $result["ssl_url"];
-                        }
-                    }
-                }
+        foreach ($data["results"] as $step => $resultsOfStep) {
+            if (!array_key_exists($step, $simplifiedResults)) {
+                $simplifiedResults[$step] = array();
+            }
+
+            foreach ($resultsOfStep as $resultOfStep) {
+                $simplifiedResults[$step][] = (object) [
+                    "name" => $resultOfStep["name"],
+                    "basename" => $resultOfStep["basename"],
+                    "ext" => $resultOfStep["ext"],
+                    "ssl_url" => $resultOfStep["ssl_url"]
+                ];
             }
         }
 
-        return $resultsUrls;
+        return $simplifiedResults;
     }
 }
