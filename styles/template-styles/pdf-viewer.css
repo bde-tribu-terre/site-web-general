@@ -1,4 +1,4 @@
-.pdf-viewer > img {
+.pdf-viewer > picture > img {
     width: 95%;
     max-width: 320px;
     max-height: 360px;
@@ -12,7 +12,7 @@
     margin: -30px auto 0 auto;
 }
 
-.pdf-viewer > img:hover {
+.pdf-viewer > picture > img:hover {
     top: 5px;
 }
 

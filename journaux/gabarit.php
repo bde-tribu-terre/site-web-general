@@ -6,7 +6,11 @@
             <div class="well">
                 <div class="pdf-viewer">
                     <h2><?= $journal->titre ?></h2>
-                    <img src="<?= "thumbnails/$journal->pdf.jpg" ?>" alt="Miniature du journal <?= $journal->titre ?>">
+                    <picture>
+                        <source srcset="<?= "thumbnails/$journal->pdf.webp" ?>" type="image/webp">
+                        <source srcset="<?= "thumbnails/$journal->pdf.jpg" ?>" type="image/jpg">
+                        <img src="<?= "thumbnails/$journal->pdf.jpg" ?>" alt="Miniature du journal <?= $journal->titre ?>">
+                    </picture>
                     <a class="button" href="<?= $journal->pdf ?>">
                         <span>
                             <img src="/resources/svg/imgPdf.svg" alt="PDF">
