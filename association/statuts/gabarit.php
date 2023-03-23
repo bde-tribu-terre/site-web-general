@@ -28,7 +28,10 @@
     <div class="col-sm-4">
         <div class="pdf-viewer">
             <h2>Statuts</h2>
-            <img src="statutsMiniature.jpg" alt="Miniature des statuts">
+            <picture>
+                <source srcset="statutsMiniature.jpg" type="image/jpg">
+                <img src="statutsMiniature.jpg" alt="Miniature des statuts">
+            </picture>
             <a href="Statuts-2021-03-29.pdf" class="button">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" alt="PDF">
@@ -43,7 +46,10 @@
     <div class="col-sm-4">
         <div class="pdf-viewer">
             <h2>Règlement intérieur</h2>
-            <img src="RIMiniature.jpg" alt="Miniature des statuts">
+            <picture>
+                <source srcset="RIMiniature.jpg" type="image/jpg">
+                <img src="RIMiniature.jpg" alt="Miniature du règlement intérieur">
+            </picture>
             <a href="RI-2021-04-11.pdf" class="button">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" alt="PDF">
