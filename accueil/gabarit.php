@@ -18,7 +18,7 @@
     <div class="col-sm-8">
         <div class="home-block">
             <img
-                    src="/resources/jpg/mandatVioletteCarre.jpg"
+                    src="/resources/jpg/mandatPecheCarre.jpg"
                     alt="Photo de l'équipe"
                     loading="lazy"
             >
