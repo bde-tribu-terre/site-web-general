@@ -7,6 +7,8 @@ class TransloaditRequest {
     private const ENDPOINT = "https://api2.transloadit.com";
     private const PATH = "/assemblies";
     private const EXPIRES = "+2 hours";
+    private const TRANSLOADIT_KEY = SECRET_TRANSLOADIT_KEY;
+    private const TRANSLOADIT_SECRET = SECRET_TRANSLOADIT_SECRET;
 
     public const PDF_THUMBNAIL = "58913b786e7b4c79b883b2648b14506d";
 
@@ -32,13 +34,13 @@ class TransloaditRequest {
         if (!ini_get('date.timezone')) date_default_timezone_set('Etc/UTC');
 
         $params['auth'] = array(
-            'key' => getenv("SECRET_TRANSLOADIT_KEY"),
+            'key' => $this::TRANSLOADIT_KEY,
             'expires' => gmdate('Y/m/d H:i:s+00:00', strtotime(TransloaditRequest::EXPIRES)),
         );
 
         $fields['params'] = json_encode($params);
 
-        $signature = hash_hmac('sha1', $fields['params'], getenv("SECRET_TRANSLOADIT_SECRET"));
+        $signature = hash_hmac('sha1', $fields['params'], $this::TRANSLOADIT_SECRET);
 
         if (!empty($signature)) {
             $fields['signature'] = $signature;

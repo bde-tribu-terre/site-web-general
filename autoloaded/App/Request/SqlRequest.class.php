@@ -6,6 +6,13 @@ use Exception;
 use PDO;
 
 class SqlRequest {
+    // Attributs statiques.
+    private const SQL_SERVER = SECRET_SQL_SERVER;
+    private const SQL_USER = SECRET_SQL_USER;
+    private const SQL_PASSWORD = SECRET_SQL_PASSWORD;
+    private const SQL_DB = SECRET_SQL_DB;
+
+
     // Constructeur statique
     public static function new(string $sqlScript): SqlRequest {
         return new SqlRequest($sqlScript);
@@ -19,9 +26,9 @@ class SqlRequest {
     public function __construct(string $sqlScript) {
         try {
             $this->pdo = new PDO(
-                "mysql:host=" . getenv("SECRET_SQL_SERVER") . ';dbname=' . getenv("SECRET_SQL_DB"),
-                getenv("SECRET_SQL_USER"),
-                getenv("SECRET_SQL_PASSWORD")
+                "mysql:host=" . $this::SQL_SERVER . ';dbname=' . $this::SQL_DB ,
+                $this::SQL_USER ,
+                $this::SQL_PASSWORD
             );
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->pdo->query('SET NAMES UTF8MB4'); // UTF8mb4 : Pour pouvoir encoder des émojis
