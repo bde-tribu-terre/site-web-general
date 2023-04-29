@@ -1,8 +1,8 @@
 <?php
 ########################################################################################################################
-# Vérification du protocole (les deux fonctionnent, mais on veut forcer le passage par HTTPS)                           #
+# Vérification du protocole (les deux fonctionnent, mais on veut forcer le passage par HTTPS)                          #
 ########################################################################################################################
-if ($_SERVER["HTTPS"] != "on") {
+if ($_SERVER["HTTPS"] != "on" && preg_match("/^.*\.\d*$/", $_SERVER["HTTP_HOST"])) {
     header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
     exit();
 }
