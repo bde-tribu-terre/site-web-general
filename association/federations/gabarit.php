@@ -50,10 +50,10 @@
                 Ingénierie.
             </p>
             <p>
-                Elle fédère une quinzaine d’associations d’étudiants en Sciences, qu’elle représente au niveau national
-                d’une voix unique. Grâce à ses étroites relations avec diverses institutions comme la CDUS, la DGESIP ou
-                encore UNISCIEL, elle fait valoir la voix des étudiants auprès des institutions, ainsi que des acteurs
-                de l’Enseignement Supérieur de la Recherche et des organismes d’État.
+                Elle fédère plusieurs dizaines d’associations d’étudiants en Sciences, qu’elle représente au niveau
+                national d’une voix unique. Grâce à ses étroites relations avec diverses institutions comme la CDUS, la
+                DGESIP ou encore UNISCIEL, elle fait valoir la voix des étudiants auprès des institutions, ainsi que des
+                acteurs de l’Enseignement Supérieur de la Recherche et des organismes d’État.
             </p>
             <p>
                 Ses objectifs comprennent également la promotion des formations en Sciences, l’information des étudiants
@@ -64,7 +64,7 @@
                 Pour l'aider et la soutenir dans ses actions nationales, l'AFNEUS est une fédération étudiante adhérente
                 au réseau de la FAGE.
             </p>
-            <!-- img class="bg-logo-img" src="/resources/svg/vectorielFNEB.svg" alt="Logo de la FNEB" -->
+            <img class="bg-logo-img" src="/resources/svg/vectorielAFNEUS.svg" alt="Logo de l'AFNEUS">
         </div>
     </div>
     <div class="col-sm-2"></div>
