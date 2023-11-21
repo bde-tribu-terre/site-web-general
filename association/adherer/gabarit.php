@@ -32,8 +32,8 @@
                 sera inférieure sur présentation de la carte d’adhérent.
             </p>
             <p>
-                Lors des événements à places limitées, week-end ski ou gala par exemple, les adhérents ont la priorité
-                sur les non-adhérents.
+                Lors des événements à places limitées, week-end ski ou gala par exemple, les adhérents peuvent avoir la
+                priorité sur les non-adhérents.
             </p>
         </div>
     </div>

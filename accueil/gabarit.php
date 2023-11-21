@@ -25,8 +25,9 @@
             <div>
                 <h2>Pour tous</h2>
                 <p>
-                    À destination de tous les étudiants de Licence et Master dans les domaines des Sciences et de la
-                    Santé, tout étudiant de ces filières peut intégrer l’équipe dirigeante de l’association.
+                    À destination de tous les étudiants de Licence et Master dans les domaines des Sciences exactes,
+                    naturelles et techniques, tout étudiant de ces filières peut intégrer l’équipe dirigeante de
+                    l’association.
                 </p>
                 <p>
                     L’adhésion, quant à elle, pour pouvoir profiter de ce que Tribu-Terre propose, est possible pour
@@ -71,10 +72,10 @@
             <div>
                 <h2>Culture Scientifique</h2>
                 <p>
-                    Tribu-Terre contribue à promouvoir la culture scientifique dans le milieu de l’enseignement
-                    supérieur, par des actions comme l’organisation de conférences gratuites faisant intervenir des
-                    spécialistes, ainsi que la vulgarisation par les étudiants eux-mêmes, à travers son journal
-                    collaboratif mensuel Omni-Sciences.
+                    Tribu-Terre contribue à promouvoir la culture scientifique, technologique et industrielle (CSTI)
+                    dans le milieu de l’enseignement supérieur, par des actions comme l’organisation de conférences
+                    gratuites faisant intervenir des spécialistes, ainsi que la vulgarisation par les étudiants
+                    eux-mêmes, à travers son journal collaboratif mensuel Omni-Sciences.
                 </p>
             </div>
         </div>
@@ -119,10 +120,11 @@
                 <p>
                     Dans l’objectif de faire vivre la vie du campus et de lutter contre l’isolement étudiant surtout
                     dans les premières années d’études, Tribu-Terre organise régulièrement des soirées à thème,
-                    notamment en bar.
+                    notamment en bar, mais aussi dans des complexes d'activités (bowling, laser game, ...), ainsi qu'un
+                    gala de fin d'année.
                 </p>
                 <p>
-                    Systématiquement, une équipe s’assure qu’aucune violence physique, verbale ou sexuelle ne soit
+                    Systématiquement, une équipe s’assure qu’aucune violence physique, verbale ou sexuelle n'est
                     commise et veille à la consommation d’alcool.
                 </p>
             </div>
@@ -162,12 +164,11 @@
                     loading="lazy"
             >
             <div>
-                <h2>Projets d’envergure</h2>
+                <h2>Voyages</h2>
                 <p>
-                    Des projets de grande envergure sont organisés pour permettre aux étudiants de vivre des moments
-                    forts qui, bien souvent, leur sont impossibles d’organiser par eux-mêmes. Week-end de ski, voyages à
-                    l'étranger, gala étudiant, … sont autant d’événements que Tribu-Terre prépare avec soin chaque
-                    année, avec comme objectif un résultat des plus grandioses.
+                    Des voyages sont organisés pour permettre aux étudiants de vivre des moments forts qui, bien
+                    souvent, leur sont impossibles d’organiser par eux-mêmes. Le Week-End ski est un incontournable
+                    annuel, et des voyages à l'étranger sont aussi organisés.
                 </p>
             </div>
         </div>
@@ -187,13 +188,13 @@
                 <h2>Tissu associatif</h2>
                 <p>
                     Tribu-Terre faisant partie du tissu associatif étudiant, elle s’ancre officiellement dans ce dernier
-                    à l’échelle locale, par son adhésion à ÔCampus, et a l’échelle nationale, par son adhésion à la
-                    FNEB.
+                    à l’échelle locale, par son adhésion à ÔCampus, et a l’échelle nationale, par son adhésion à
+                    l'AFNEUS.
                 </p>
                 <p>
                     Les fédérations permettent à Tribu-Terre de porter à de plus grandes échelles la voix des étudiants
-                    en Sciences et Santé d’Orléans, et à bénéficier d’un solide réseau de compétences associatives pour
-                    assurer sa pérennité.
+                    en Sciences d’Orléans, et à bénéficier d’un solide réseau de compétences associatives pour assurer
+                    sa pérennité.
                 </p>
             </div>
         </div>

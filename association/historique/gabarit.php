@@ -28,13 +28,19 @@
             </p>
             <p>
                 Pendant les années qui suivent, toutes les filières scientifiques se font représenter au sein de
-                l'équipe : géologie, biologie, chimie, physique, mathématiques, informatique, SVT, LAS…
+                l'équipe : géologie, biologie, chimie, physique, mathématiques, informatique, SVT, LAS scientifiques…
             </p>
             <p>
-                À la rentrée 2022, l'Université d'Orléans accueille pour la première fois des étudiants en PASS,
-                initiant le projet d'ouverture d'une faculté de médecine. À ce titre, Tribu-Terre représente depuis lors
-                les étudiants en PASS et en année supérieure de médecine, qui sont rattachés à l'UFR Sciences et
-                Techniques, au sein des conseils Universitaires.
+                Au cours de l'année 2022, au terme de négociations de longue date avec les services administratifs et la
+                direction de l'UFR ST, Tribu-Terre obtient un nouveau local dans le bâtiment de physique, au cœur du
+                campus scientifique. L'association quitte donc définitivement l'OSUC et cède la gestion de son ancien
+                local à l'AGSO, association des étudiants en Sciences de la Terre nouvellement créée deux ans plus tôt.
+            </p>
+            <p>
+                Durant l'année 2023, des questionnements internes à Tribu-Terre se font entendre quant à la pertinence
+                de l'adhésion à la FNEB, jugée comme en perte de vitesse et ayant des difficultés à être en phase avec
+                les besoins de l'association et des étudiants orléanais. Le Conseil d'Administration de Tribu-Terre
+                choisit de quitter la FNEB et d'engager les démarches d'adhésion à l'AFNEUS.
             </p>
         </div>
         <hr>

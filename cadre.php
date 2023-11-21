@@ -113,7 +113,7 @@
         </picture>
     </a>
     <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' styles="display: revert"' : ''; ?>>
-        Association des Étudiants en Sciences et en Santé de l'Université d'Orléans
+        Association des Étudiants en Sciences de l'Université d'Orléans
     </p>
 </header>
 
