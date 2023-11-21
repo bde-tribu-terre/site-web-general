@@ -176,18 +176,6 @@
                             Instagram
                         </a>
                     </li>
-                    <li>
-                        <a class="dropdown-item" href="https://www.facebook.com/bdeTribuTerre/">
-                            <i class="bi bi-facebook" style="font-size: larger"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://twitter.com/Tributerre45/">
-                            <i class="bi bi-twitter" style="font-size: larger"></i>
-                            Twitter
-                        </a>
-                    </li>
                 </ul>
             </li>
             <li class="nav-item<?= $_SERVER["REQUEST_URI"] == '/journaux/' ? ' active' : ''; ?>">
