@@ -45,6 +45,14 @@
             </p>
         </div>
         <hr>
+        <!--<h2>2022 – 2023 | Mandat Pêche</h2>
+        <h3><i>Présidence de Théa <span class="pc">Drici</span></i></h3>
+        <div class="histo-compo">
+            <img class="histo-compo-bg" src="/resources/svg/fondMandatPeche.svg" alt="Fond mandat pêche">
+            <img class="histo-compo-fg" style="top: 18%;" src="/resources/jpg/mandatPeche.jpg" alt="Photo mandat pêche">
+            <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
+        </div>
+        <hr>-->
         <h2>2022 – 2023 | Mandat Violette</h2>
         <h3><i>Présidence de Jiliane <span class="pc">Bourriot</span></i></h3>
         <div class="histo-compo">
