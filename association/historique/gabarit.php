@@ -80,7 +80,11 @@
         <h2>2018 – 2019</h2>
         <h3><i>Présidence de Quentin <span class="pc">Baju</span></i></h3>
         <div class="histo-compo">
-            <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2018-2019">
+            <picture>
+                <source srcset="/resources/webp/fondMandatAncien.webp" type="image/webp">
+                <source srcset="/resources/png/fondMandatAncien.png" type="image/jpg">
+                <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2018-2019">
+            </picture>
             <img class="histo-compo-fg" style="top: 18%;" src="/resources/jpg/mandat20182019.jpg" alt="Photo mandat 2018-2019">
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
