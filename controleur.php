@@ -21,6 +21,7 @@ require ROOT . "autoloaded/Autoloader.class.php";
 # Activation des checkers                                                                                              #
 ########################################################################################################################
 App\Checker\SitemapChecker::new(ROOT)->check();
+App\Checker\ThumbnailChecker::new(ROOT . "association/statuts/")->check();
 App\Checker\ThumbnailChecker::new(ROOT . "journaux/")->check();
 
 ########################################################################################################################

@@ -153,7 +153,7 @@
                     <li>
                         <a class="dropdown-item<?= $_SERVER["REQUEST_URI"] == '/association/statuts/' ? ' active' : ''; ?>" href="/association/statuts/">
                             <i class="bi bi-file-earmark-text-fill" style="font-size: larger"></i>
-                            Statuts
+                            Statuts & R.I.
                         </a>
                     </li>
                     <li>

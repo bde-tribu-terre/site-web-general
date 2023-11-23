@@ -1,4 +1,4 @@
-<h1>Statuts</h1>
+<h1>Statuts et règlement intérieur</h1>
 <hr>
 <div class="row">
     <div class="col-sm-2"></div>
@@ -28,11 +28,11 @@
         <div class="pdf-viewer">
             <h2>Statuts</h2>
             <picture>
-                <source srcset="statutsMiniature.webp" type="image/webp">
-                <source srcset="statutsMiniature.jpg" type="image/jpg">
-                <img src="statutsMiniature.jpg" alt="Miniature des statuts">
+                <source srcset="thumbnails/<?= STATUTS ?>.pdf.webp" type="image/webp">
+                <source srcset="thumbnails/<?= STATUTS ?>.pdf.jpg" type="image/jpg">
+                <img src="thumbnails/<?= STATUTS ?>.pdf.jpg" alt="Miniature des statuts">
             </picture>
-            <a href="Statuts-2023-03-18.pdf" class="button">
+            <a href="<?= STATUTS ?>.pdf" class="button">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" alt="PDF">
                     &emsp;Consulter en ligne
@@ -47,11 +47,11 @@
         <div class="pdf-viewer">
             <h2>Règlement intérieur</h2>
             <picture>
-                <source srcset="RIMiniature.webp" type="image/webp">
-                <source srcset="RIMiniature.jpg" type="image/jpg">
-                <img src="RIMiniature.jpg" alt="Miniature du règlement intérieur">
+                <source srcset="thumbnails/<?= RI ?>.pdf.webp" type="image/webp">
+                <source srcset="thumbnails/<?= RI ?>.pdf.jpg" type="image/jpg">
+                <img src="thumbnails/<?= RI ?>.pdf.jpg" alt="Miniature du règlement intérieur">
             </picture>
-            <a href="RI-2023-03-18.pdf" class="button">
+            <a href="<?= RI ?>.pdf" class="button">
                 <span>
                     <img src="/resources/svg/imgPdf.svg" alt="PDF">
                     &emsp;Consulter en ligne
