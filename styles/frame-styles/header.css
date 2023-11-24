@@ -10,7 +10,7 @@ header { /* Retire la marge par défaut (vu qu'il faut coller la navbar) */
     padding-bottom: 48px;
 }
 
-header p {
+header p.normal, header p.main {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200;
@@ -21,7 +21,7 @@ header p {
             -5px -5px 5px #f3f3f3;
 }
 
-header img {
+header img.normal, header img.main {
     width: 300px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -35,11 +35,11 @@ header img {
         padding: 10px 0 10px 0;
     }
 
-    header img {
+    header img.normal {
         width: 150px;
     }
 
-    header p {
+    header p.normal {
         display: none;
     }
 }

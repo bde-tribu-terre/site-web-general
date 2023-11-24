@@ -109,10 +109,10 @@
         <picture>
             <source srcset="/resources/webp/imgLogoMini.webp" type="image/webp">
             <source srcset="/resources/png/imgLogoMini.png" type="image/png">
-            <img src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre" <?= $_SERVER["REQUEST_URI"] == "/" ? "width=300" : "" ?>>
+            <img class="<?= $_SERVER["REQUEST_URI"] == "/" ? "main" : "normal" ?>" src="/resources/png/imgLogoMini.png" alt="Logo de Tribu-Terre">
         </picture>
     </a>
-    <p<?= $_SERVER["REQUEST_URI"] == '/' ? ' styles="display: revert"' : ''; ?>>
+    <p class="<?= $_SERVER["REQUEST_URI"] == "/" ? "main" : "normal" ?>">
         Association des Étudiants en Sciences de l'Université d'Orléans
     </p>
 </header>
