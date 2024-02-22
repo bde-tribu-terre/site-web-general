@@ -22,7 +22,6 @@ require ROOT . "autoloaded/Autoloader.class.php";
 ########################################################################################################################
 App\Checker\SitemapChecker::new(ROOT)->check();
 App\Checker\ThumbnailChecker::new(ROOT . "association/statuts/")->check();
-App\Checker\ThumbnailChecker::new(ROOT . "journaux/")->check();
 
 ########################################################################################################################
 # Version du site                                                                                                      #

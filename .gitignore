@@ -1,5 +1,3 @@
-/journaux/*.pdf
-/journaux/thumbnails
 fakeSecrets.php
 
 *.min.css
