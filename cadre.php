@@ -184,12 +184,6 @@
                     Podcasts
                 </a>
             </li>
-            <li class="nav-item<?= str_starts_with($_SERVER["REQUEST_URI"], '/trouver-une-salle/') ? ' active' : ''; ?>">
-                <a class="nav-link" href="/trouver-une-salle/">
-                    <i class="bi bi-geo-fill" style="font-size: larger"></i>
-                    Trouver une salle
-                </a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://discord.gg/EfkUuC2">
                     <i class="bi bi-discord" style="font-size: larger"></i>
