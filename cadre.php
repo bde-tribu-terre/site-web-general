@@ -179,12 +179,6 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.podcastics.com/podcast/tribu-sciences_1/" target="_blank">
-                    <i class="bi bi-mic-fill" style="font-size: larger"></i>
-                    Podcasts
-                </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="https://discord.gg/EfkUuC2">
                     <i class="bi bi-discord" style="font-size: larger"></i>
                     Serveur Discord
