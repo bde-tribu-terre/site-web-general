@@ -169,19 +169,18 @@
                             Contact
                         </a>
                     </li>
-                    <li role="separator" class="divider"></li>
-                    <li>
-                        <a class="dropdown-item" href="https://www.instagram.com/tribu.terre/">
-                            <i class="bi bi-instagram" style="font-size: larger"></i>
-                            Instagram
-                        </a>
-                    </li>
                 </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://discord.gg/EfkUuC2">
                     <i class="bi bi-discord" style="font-size: larger"></i>
                     Serveur Discord
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/tribu.terre/">
+                    <i class="bi bi-instagram" style="font-size: larger"></i>
+                    Instagram
                 </a>
             </li>
         </ul>
