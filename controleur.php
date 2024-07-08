@@ -20,7 +20,7 @@ require ROOT . "autoloaded/Autoloader.class.php";
 ########################################################################################################################
 # Activation des checkers                                                                                              #
 ########################################################################################################################
-App\Checker\SitemapChecker::new(ROOT)->check();
+App\Checker\StaticSitemapChecker::new(ROOT, ROOT, 7776000)->check();
 App\Checker\ThumbnailChecker::new(ROOT . "association/statuts/")->check();
 
 ########################################################################################################################
