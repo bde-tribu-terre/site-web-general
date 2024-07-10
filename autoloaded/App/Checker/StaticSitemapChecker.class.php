@@ -79,7 +79,9 @@ class StaticSitemapChecker {
         foreach (explode("/", $url) as $dir) {
             if ($dir == "..")
                 $cursor--;
-            elseif ($dir != ".") {
+            elseif ($dir == ".")
+                continue;
+            else {
                 $path[$cursor] = $dir;
                 $cursor++;
             }
@@ -87,9 +89,9 @@ class StaticSitemapChecker {
 
         $pathString = "";
         for ($i = 0; $i < $cursor; $i++) {
-            $pathString .= $path[$i];
-            if ($i < $cursor - 1)
+            if ($i != 0)
                 $pathString .= "/";
+            $pathString .= $path[$i];
         }
 
         return $pathString;
