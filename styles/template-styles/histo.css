@@ -16,12 +16,44 @@
     z-index: 0;
 }
 
-.histo-compo > .histo-compo-fg {
+.histo-compo > .histo-compo-lu {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    box-shadow: none;
+
+    z-index: 1;
+
+    border-radius: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: rotation 28s linear infinite;
+}
+
+.histo-compo > .histo-compo-lg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: none;
+
+    z-index: 2;
+}
+
+.histo-compo > .histo-compo-ph {
     width: 48%;
     height: 48%;
     object-fit: cover;
 
-    z-index: 1;
+    z-index: 3;
 
     border-radius: 100%;
 
@@ -40,31 +72,11 @@
     transition: all 0.3s ease-out;
 }
 
-.histo-compo > .histo-compo-fg:hover {
+.histo-compo > .histo-compo-ph:hover {
     width: 100%;
     height: 70%;
 
     border-radius: 10px;
-}
-
-.histo-compo > .histo-compo-lu {
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-    box-shadow: none;
-
-    z-index: -1;
-
-    border-radius: 100%;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-
-    animation: rotation 28s linear infinite;
 }
 
 @keyframes rotation {
