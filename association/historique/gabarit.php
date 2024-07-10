@@ -45,44 +45,87 @@
             </p>
         </div>
         <hr>
+        <h2>2023 – 2024 | Mandat Patate</h2>
+        <h3><i>Présidence de Sophie <span class="pc">Michalik</span></i></h3>
+        <div class="histo-compo">
+            <img class="histo-compo-bg" src="/resources/svg/fondMandatPatateBg.svg" alt="Fond mandat patate">
+            <img class="histo-compo-lg" src="/resources/svg/fondMandatPatateLg.svg" alt="Logo mandat patate">
+            <picture>
+                <source srcset="/resources/webp/mandatPatate.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandatPatate.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="bottom: 18%;" src="/resources/jpg/mandatPatate.jpg" alt="Photo mandat patate">
+            </picture>
+            <img class="histo-compo-lu" style="bottom: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
+        </div>
+        <hr>
         <h2>2022 – 2023 | Mandat Pêche</h2>
         <h3><i>Présidence de Théa <span class="pc">Drici</span></i></h3>
         <div class="histo-compo">
             <img class="histo-compo-bg" src="/resources/svg/fondMandatPecheBg.svg" alt="Fond mandat pêche">
             <img class="histo-compo-lg" src="/resources/svg/fondMandatPecheLg.svg" alt="Logo mandat pêche">
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatPeche.jpg" alt="Photo mandat pêche">
+            <picture>
+                <source srcset="/resources/webp/mandatPeche.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandatPeche.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatPeche.jpg" alt="Photo mandat pêche">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
         <hr>
         <h2>2022 – 2023 | Mandat Violette</h2>
         <h3><i>Présidence de Jiliane <span class="pc">Bourriot</span></i></h3>
         <div class="histo-compo">
-            <img class="histo-compo-bg" src="/resources/svg/fondMandatViolette.svg" alt="Fond mandat violette">
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatViolette.jpg" alt="Photo mandat violette">
+            <img class="histo-compo-bg" src="/resources/svg/fondMandatVioletteBg.svg" alt="Fond mandat violette">
+            <img class="histo-compo-lg" src="/resources/svg/fondMandatVioletteLg.svg" alt="Logo mandat violette">
+            <picture>
+                <source srcset="/resources/webp/mandatViolette.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandatViolette.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatViolette.jpg" alt="Photo mandat violette">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
         <hr>
         <h2>2021 – 2022 | Mandat Artichaut</h2>
         <h3><i>Présidence d'Anaël <span class="pc">Barodine</span></i></h3>
         <div class="histo-compo">
-            <img class="histo-compo-bg" src="/resources/svg/fondMandatArtichaut.svg" alt="Fond mandat artichaut">
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatArtichaut.jpg" alt="Photo mandat artichaut">
+            <img class="histo-compo-bg" src="/resources/svg/fondMandatArtichautBg.svg" alt="Fond mandat artichaut">
+            <img class="histo-compo-lg" src="/resources/svg/fondMandatArtichautLg.svg" alt="Logo mandat artichaut">
+            <picture>
+                <source srcset="/resources/webp/mandatArtichaut.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandatArtichaut.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandatArtichaut.jpg" alt="Photo mandat artichaut">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
         <hr>
         <h2>2020 – 2021</h2>
         <h3><i>Présidence de Simon <span class="pc">Medelli</span></i></h3>
         <div class="histo-compo">
-            <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2020-2021">
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20202021.jpg" alt="Photo mandat 2020-2021">
+            <picture>
+                <source srcset="/resources/webp/fondMandatAncien.webp" type="image/webp">
+                <source srcset="/resources/png/fondMandatAncien.png" type="image/png">
+                <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2020-2021">
+            </picture>
+            <picture>
+                <source srcset="/resources/webp/mandat20202021.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandat20202021.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20202021.jpg" alt="Photo mandat 2020-2021">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
         <hr>
         <h2>2019 – 2020</h2>
         <h3><i>Présidence de Riad <span class="pc">Benchekra</span></i></h3>
         <div class="histo-compo">
-            <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2019-2020">
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20192020.jpg" alt="Photo mandat 2019-2020">
+            <picture>
+                <source srcset="/resources/webp/fondMandatAncien.webp" type="image/webp">
+                <source srcset="/resources/png/fondMandatAncien.png" type="image/png">
+                <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2019-2020">
+            </picture>
+            <picture>
+                <source srcset="/resources/webp/mandat20192020.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandat20192020.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20192020.jpg" alt="Photo mandat 2019-2020">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
         <hr>
@@ -94,7 +137,11 @@
                 <source srcset="/resources/png/fondMandatAncien.png" type="image/jpg">
                 <img class="histo-compo-bg" src="/resources/png/fondMandatAncien.png" alt="Fond mandat 2018-2019">
             </picture>
-            <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20182019.jpg" alt="Photo mandat 2018-2019">
+            <picture>
+                <source srcset="/resources/webp/mandat20182019.webp" type="image/webp">
+                <source srcset="/resources/jpg/mandat20182019.jpg" type="image/jpg">
+                <img class="histo-compo-ph" style="top: 18%;" src="/resources/jpg/mandat20182019.jpg" alt="Photo mandat 2018-2019">
+            </picture>
             <img class="histo-compo-lu" style="top: 18%;" src="/resources/svg/lueurMandat.svg" alt="Lueur">
         </div>
     </div>
