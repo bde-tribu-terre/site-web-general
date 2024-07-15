@@ -12,36 +12,19 @@
                 repos pour les étudiants de l'OSUC qui deviendra très vite le local de l'association.
             </p>
             <p>
-                Au cours de l'année 2014, Tribu-Terre se rapproche de la FNEB, Fédération Nationale des étudiants en
-                Sciences Exactes, Naturelles et Techniques, dans le but d'étendre son réseau en France. Elle devient
-                officiellement membre à part entière de la fédération le 13 juin 2015.
-            </p>
-            <p>
-                Le 16 octobre 2017, Tribu-Terre s'associe avec 20 associations étudiantes orléanaises pour fonder
-                ÔCampus, fédération des associations étudiantes d'Orléans.
-            </p>
-            <p>
                 En 2018, l'association s'ouvre à toutes les filières scientifiques de l'Université d'Orléans, plus
                 précisément à toutes les Licences et tous les Masters de l'OSUC et de l'UFR Sciences et Techniques. En
                 une année seulement, les biologistes, qui ont désormais le droit d'intégrer le Bureau, se retrouvent en
-                majorité.
+                majorité. Pendant les années qui suivent, toutes les filières scientifiques se font représenter au sein de
+                l'équipe : géologie et biologie, mais aussi chimie, physique, mathématiques, informatique, SVT, LAS
+                scientifiques…
             </p>
             <p>
-                Pendant les années qui suivent, toutes les filières scientifiques se font représenter au sein de
-                l'équipe : géologie, biologie, chimie, physique, mathématiques, informatique, SVT, LAS scientifiques…
-            </p>
-            <p>
-                Au cours de l'année 2022, au terme de négociations de longue date avec les services administratifs et la
-                direction de l'UFR ST, Tribu-Terre obtient un nouveau local dans le bâtiment de physique, au cœur du
-                campus scientifique. L'association quitte donc définitivement l'OSUC et cède la gestion de son ancien
-                local à l'AGSO, association des étudiants en Sciences de la Terre nouvellement créée deux ans plus tôt.
-            </p>
-            <p>
-                Durant l'année 2023, des questionnements internes à Tribu-Terre se font entendre quant à la pertinence
-                de l'adhésion à la FNEB, jugée comme en perte de vitesse et ayant des difficultés à être en phase avec
-                les besoins de l'association et des étudiants orléanais. Le Conseil d'Administration de Tribu-Terre,
-                réunit face aux représentants des deux fédérations scientifiques, choisit de quitter la FNEB et
-                d'engager les démarches d'adhésion à l'AFNEUS.
+                Aujourd'hui, Tribu-Terre est l'association représentative de tous les étudiants des filières
+                scientifiques de l'Université d'Orléans. À ce titre, elle défend ces derniers au sein de l'UFR par
+                le biais d'élus étudiants. Elle est aussi adhérente et administratrice à la fédération des associations
+                étudiantes d'Orléans, ÔCampus, dont elle est membre fondatrice, et à la fédération nationale des
+                étudiants scientifiques, l'AFNEUS.
             </p>
         </div>
         <hr>
