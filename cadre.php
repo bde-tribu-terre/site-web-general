@@ -6,10 +6,7 @@
 
     <!-- Meta tags -->
     <meta property="og:title" content="<?php echo TITLE ?>">
-    <meta
-            property="description"
-            content="Tribu-Terre, Association des Étudiants en Sciences de l'Université d'Orléans."
-    >
+    <meta property="description" content="Tribu-Terre, Association des Étudiants en Sciences de l'Université d'Orléans.">
     <meta property="author" content="Tribu-Terre">
 
     <!-- Bootstrap -->
@@ -104,7 +101,7 @@
 </header>
 
 <nav class="navbar navbar-expand-sm py-0">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationHeader" aria-label="Menu déroulant">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
