@@ -4,27 +4,13 @@
     <meta charset="UTF-8">
     <title><?php echo TITLE ?> | Tribu-Terre</title>
 
-    <!-- Meta tags essentiels -->
+    <!-- Meta tags -->
     <meta property="og:title" content="<?php echo TITLE ?>">
-    <meta property="og:image" content="/resources/webp/imgLogoMini.webp">
     <meta
-            property="og:description"
+            property="description"
             content="Tribu-Terre, Association des Étudiants en Sciences de l'Université d'Orléans."
     >
-    <meta
-            name="description"
-            content="Tribu-Terre, Association des Étudiants en Sciences de l'Université d'Orléans."
-    >
-    <meta property="og:url" content="https://bde-tribu-terre.fr/">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Meta tags recommandés -->
-    <meta property="og:site_name" content="BDE Tribu-Terre">
-    <meta name="twitter:image:alt" content="Logo de Tribu-Terre">
-
-    <!-- Meta tags recommandés -->
-    <!-- <meta property="fb:app_id" content="your_app_id"> <- Il faut un token pour avoir l'ID de la page -->
-    <meta name="twitter:site" content="@tributerre45">
+    <meta property="author" content="Tribu-Terre">
 
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
