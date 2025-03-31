@@ -2,8 +2,6 @@
 
 namespace App\Sitemap\Generator;
 
-use App\Checker\Sitemap\Sitemap;
-
 /**
  * Générateur de sitemap statique, qui détecte les pages Web statiques via les fichiers 'index.php' dans le système de
  * fichiers depuis une racine donnée.
@@ -13,7 +11,8 @@ class SitemapGeneratorStatic implements SitemapGenerator {
 
     /**
      * Construit un générateur de sitemap statique selon un emplacement à partir duquel rechercher récursivement.
-     * @param string $pathToSearch Chemin vers l'emplacement servant de racine à la recherche récursive.
+     * @param string $pathToSearch Chemin vers l'emplacement servant de racine à la recherche récursive, excluant le
+     * chemin absolu de la racine du serveur PHP et excluant le '/' initial. Par exemple : 'associations/'.
      */
     public function __construct(string $pathToSearch) {
         $this->pathToSearch = $pathToSearch;
