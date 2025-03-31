@@ -11,7 +11,7 @@ class Log {
     // Méthode statique
     public static function log(string $message): void {
         try {
-            $repertory = explode(DIRECTORY_SEPARATOR, realpath(ROOT));
+            $repertory = explode(DIRECTORY_SEPARATOR, realpath($_SERVER['DOCUMENT_ROOT']));
             SqlRequest::new(Log::SCRIPT)->execute(["[" . strtoupper(end($repertory)) . "]$message"]);
         } catch (Exception $exception) {
             Message::add($exception);

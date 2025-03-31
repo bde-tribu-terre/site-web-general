@@ -2,6 +2,9 @@ fakeSecrets.php
 
 thumbnails/
 
+sitemap-static.xml
+sitemapindex.xml
+
 *.min.css
 *.min.js
 

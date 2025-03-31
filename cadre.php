@@ -18,22 +18,22 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <?php if (file_exists(ROOT . "styles/overall-styles")): ?>
+    <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/styles/overall-styles")): ?>
         <!-- Feuilles de style générales -->
         <style>
-            <?php foreach (scandir(ROOT . "styles/overall-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+            <?php foreach (scandir($_SERVER['DOCUMENT_ROOT'] . "/styles/overall-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
                 /* <?= $style ?> */
-                <?= file_get_contents(ROOT . "styles/overall-styles/" . $style) ?>
+                <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/styles/overall-styles/" . $style) ?>
             <?php endif; endforeach; ?>
         </style>
     <?php endif; ?>
 
-    <?php if (file_exists(ROOT . "styles/frame-styles")): ?>
+    <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/styles/frame-styles")): ?>
         <!-- Feuilles de style du cadre -->
         <style>
-            <?php foreach (scandir(ROOT . "styles/frame-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
+            <?php foreach (scandir($_SERVER['DOCUMENT_ROOT'] . "/styles/frame-styles") as $style): if (str_ends_with($style, ".min.css")): ?>
                 /* <?= $style ?> */
-                <?= file_get_contents(ROOT . "styles/frame-styles/" . $style) ?>
+                <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/styles/frame-styles/" . $style) ?>
             <?php endif; endforeach; ?>
         </style>
     <?php endif; ?>
@@ -43,8 +43,8 @@
         <style>
             <?php foreach (STYLES as $style): ?>
                 /* <?= $style . ".min.css" ?> */
-                <?php if (file_exists(ROOT . "styles/template-styles/" . $style . ".min.css")): ?>
-                    <?= file_get_contents(ROOT . "styles/template-styles/" . $style . ".min.css") ?>
+                <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/styles/template-styles/" . $style . ".min.css")): ?>
+                    <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/styles/template-styles/" . $style . ".min.css") ?>
                 <?php else: ?>
                     /* Impossible de trouver le style de gabarit "<?= $style ?>" */
                 <?php endif; ?>
@@ -52,22 +52,22 @@
         </style>
     <?php endif; ?>
 
-    <?php if (file_exists(ROOT . "scripts/overall-scripts")): ?>
+    <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/scripts/overall-scripts")): ?>
         <!-- Scripts généraux -->
         <script type="application/javascript">
-            <?php foreach (scandir(ROOT . "scripts/overall-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
+            <?php foreach (scandir($_SERVER['DOCUMENT_ROOT'] . "/scripts/overall-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
                 /* <?= $script ?> */
-                <?= file_get_contents(ROOT . "scripts/overall-scripts/" . $script) ?>
+                <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/scripts/overall-scripts/" . $script) ?>
             <?php endif; endforeach; ?>
         </script>
     <?php endif; ?>
 
-    <?php if (file_exists(ROOT . "scripts/frame-scripts")): ?>
+    <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/scripts/frame-scripts")): ?>
         <!-- Scripts du cadre -->
         <script type="application/javascript">
-            <?php foreach (scandir(ROOT . "scripts/frame-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
+            <?php foreach (scandir($_SERVER['DOCUMENT_ROOT'] . "/scripts/frame-scripts") as $script): if (str_ends_with($script, ".min.js")): ?>
                 /* <?= $script ?> */
-                <?= file_get_contents(ROOT . "scripts/frame-scripts/" . $script) ?>
+                <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/scripts/frame-scripts/" . $script) ?>
             <?php endif; endforeach; ?>
         </script>
     <?php endif; ?>
@@ -77,8 +77,8 @@
         <script type="application/javascript">
             <?php foreach (SCRIPTS as $script): ?>
                 /* <?= $script . ".min.js" ?> */
-                <?php if (file_exists(ROOT . "scripts/template-scripts/" . $script . ".min.js")): ?>
-                    <?= file_get_contents(ROOT . "scripts/template-scripts/" . $script . ".min.js") ?>
+                <?php if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/scripts/template-scripts/" . $script . ".min.js")): ?>
+                    <?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/scripts/template-scripts/" . $script . ".min.js") ?>
                 <?php else: ?>
                     /* Impossible de trouver le script de gabarit "<?= $script ?>" */
                 <?php endif; ?>
