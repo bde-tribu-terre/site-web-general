@@ -1,5 +1,7 @@
 fakeSecrets.php
 
+thumbnails/
+
 *.min.css
 *.min.js
 
